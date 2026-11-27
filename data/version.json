@@ -1,8 +1,18 @@
 {
- "version": "1.41",
+ "version": "1.43",
  "date": "2026-11-27",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.43",
+   "date": "2026-11-27",
+   "resume": "Licences : AGPL-3.0 pour le code, CC BY-SA 4.0 pour les données, identité visuelle réservée ; avis de droits ; lien « Code source » dans le pied de page."
+  },
+  {
+   "version": "1.42",
+   "date": "2026-11-27",
+   "resume": "Contact : adresse e-mail dédiée en option (CONTACT_EMAIL, désactivée par défaut) et modèles de tickets GitHub (erreur de position, droit de réponse, suggestion)."
+  },
   {
    "version": "1.41",
    "date": "2026-11-27",
