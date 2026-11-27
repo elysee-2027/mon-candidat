@@ -11,6 +11,7 @@
 #   - remplace l'adresse du site dans les balises de partage et, si fournie, l'adresse de l'API ;
 #   - crée un dépôt Git neuf, avec un seul commit signé du pseudonyme (adresse « noreply » GitHub) ;
 #   - ne pousse rien : vous poussez vous-même, depuis votre compte dédié.
+#   - NOGIT=1 : n'écrit que les fichiers (pour mettre à jour un dépôt public existant, sans réécrire son historique).
 set -euo pipefail
 
 if [ $# -lt 3 ]; then sed -n "2,13p" "$0"; exit 1; fi
@@ -41,7 +42,20 @@ else:
     p = dest / 'js' / 'config.js'; s = p.read_text(encoding='utf-8')
     s = re.sub(r"ISSUES_URL: '[^']*'", "ISSUES_URL: 'https://github.com/" + pseudo + "/" + repo + "/issues'", s)
     p.write_text(s, encoding='utf-8')
+# adresse du dépôt public : lien « Code source » (AGPL, section 13)
+p = dest / 'js' / 'config.js'; s = p.read_text(encoding='utf-8')
+s = re.sub(r"SOURCE_URL: '[^']*'", "SOURCE_URL: 'https://github.com/" + pseudo + "/" + repo + "'", s)
+p.write_text(s, encoding='utf-8')
 PY
+
+# NOGIT=1 : mise à jour d'un dépôt public existant. On produit seulement les fichiers, à copier dans le clone local du dépôt
+# public (en gardant son dossier .git), puis à valider avec GitHub Desktop sous l'identité du compte anonyme.
+if [ "${NOGIT:-0}" = "1" ]; then
+  echo
+  echo "Fichiers prêts dans : $DEST (sans dépôt Git)"
+  echo "Dans le clone du dépôt public : supprimer tout sauf .git, copier ces fichiers, puis valider et pousser."
+  exit 0
+fi
 
 cd "$DEST"
 git init -q -b main

@@ -610,11 +610,12 @@ function viewLegal() {
     <li><b>Adresses IP :</b> le service qui reçoit les statistiques et les messages ne les enregistre pas et ne tient aucun journal de requêtes. Les requêtes transitent par Cloudflare, qui assure la liaison sécurisée avec le serveur de l'éditeur et voit donc l'adresse du visiteur le temps du transit, selon sa propre politique de confidentialité. Pour limiter les abus (envois en rafale), une empreinte salée de l'adresse est gardée en mémoire vive quelques minutes, jamais écrite sur disque, avec un sel renouvelé chaque jour.</li>
     <li><b>Compteur de simulations${CFG.COUNTER_URL ? '' : ' (non activé)'} :</b> s'il est activé, il n'enregistre qu'un nombre total, sans aucune réponse ni identifiant.</li>
     <li><b>Signalements :</b> ${CFG.CONTACT_URL ? '' : CFG.ISSUES_URL ? 'les signalements passent par les tickets publics GitHub : le texte est public et associé à votre compte GitHub (compte gratuit nécessaire). Ne mettez aucune donnée personnelle dans le texte. GitHub traite vos données selon sa propre politique de confidentialité ; le site lui-même ne reçoit rien. ' : 'aucun canal de contact n\'est activé pour le moment. '}</li>
+    ${CFG.CONTACT_EMAIL ? `<li><b>Courriel :</b> si vous écrivez à l'adresse indiquée sur la page Contact, votre message et votre adresse sont reçus et conservés par le fournisseur de messagerie de l'éditeur, uniquement pour traiter votre demande, et supprimés une fois celle-ci traitée.</li>` : ''}
     ${CFG.CONTACT_URL ? `<li><b>Formulaire de contact :</b> le message, l'objet et, si vous la donnez, votre adresse électronique sont transmis au serveur de l'éditeur${CFG.CONTACT_SERVICE ? ' (' + esc(CFG.CONTACT_SERVICE) + ')' : ''}, uniquement pour traiter votre demande. Ils sont conservés au plus douze mois puis supprimés automatiquement. L'adresse électronique est facultative : sans elle, aucune réponse ne peut vous être apportée.</li>` : ''}
     <li><b>Vos droits :</b> vous pouvez demander l'accès, la rectification ou l'effacement des données transmises via le formulaire, et introduire une réclamation auprès de la CNIL (www.cnil.fr).</li>
   </ul>
   <h2>Propriété intellectuelle</h2>
-  <p>Les citations restent la propriété de leurs auteurs et sont reproduites au titre du droit de courte citation, avec leur source. Le code et la méthode de l'outil sont publiés ${CFG.LICENCE ? 'sous licence ' + esc(CFG.LICENCE) : 'sur le dépôt du projet'}.</p></div>`;
+  <p>Les citations restent la propriété de leurs auteurs et sont reproduites au titre du droit de courte citation, avec leur source. Le code et la méthode de l'outil sont publiés ${CFG.LICENCE ? 'sous licence ' + esc(CFG.LICENCE) : 'sur le dépôt du projet'}${CFG.SOURCE_URL ? ' : <a href="' + esc(CFG.SOURCE_URL) + '" target="_blank" rel="noopener noreferrer">code source</a>' : ''}.</p></div>`;
 }
 
 const CONTACT_OBJETS = ["Signaler une erreur sur une position", "Droit de réponse d'un candidat ou de son équipe", "Proposer une question ou une source", "Autre"];
@@ -626,6 +627,7 @@ function viewContact(params) {
   const active = !!CFG.CONTACT_URL || viaIssues;
   return `<div class="prose"><p class="eyebrow">Contact</p><h1>Écrire à l'éditeur</h1>
   <p class="lead">Une citation erronée, une position dépassée, un droit de réponse, une suggestion : chaque message est lu.</p>
+  ${CFG.CONTACT_EMAIL ? `<div class="notice"><b>Message confidentiel, droit de réponse :</b> écrivez par e-mail à <span class="mailtxt">${esc(CFG.CONTACT_EMAIL)}</span> <button type="button" class="sortbtn solo" data-act="mail" style="margin-top:8px">Ouvrir mon application de messagerie</button><br><span class="small muted">Votre message et votre adresse sont reçus par le fournisseur de messagerie de l'éditeur ; ne joignez aucune donnée sensible.</span></div>` : ''}
   ${viaIssues ? '<div class="notice"><b>Signalement public.</b> Le bouton ouvre un ticket sur GitHub, prérempli avec votre texte. Il sera visible de tous et associé à votre compte GitHub (gratuit, nécessaire pour publier). Ne mettez aucune donnée personnelle.</div>' : active ? '' : '<div class="notice">Aucun canal de contact n\'est activé pour le moment : le formulaire ne peut pas être envoyé.</div>'}
   <form class="form" id="contact-form" novalidate>
     <label>Objet<select name="objet" required>${CONTACT_OBJETS.map((o, i) => `<option${(q && i === 0) ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select></label>
@@ -721,6 +723,7 @@ document.addEventListener('click', (e) => {
     rerender(viewResults);
   } else if (t.dataset.act === 'poles') { polesOpen = !polesOpen; rerender(viewResults);
   } else if (t.dataset.act === 'chipsort') { chipSort = t.dataset.sort; rerender(viewResults); }
+  else if (t.dataset.act === 'mail') { const addr = String(CFG.CONTACT_EMAIL).replace(/\s*\(at\)\s*/i, '@').replace(/\s*\(dot\)\s*/gi, '.').replace(/\s+/g, ''); location.href = 'mailto:' + addr + '?subject=' + encodeURIComponent('Élysée 2027 : ' + (new URLSearchParams(location.hash.split('?')[1] || '').get('q') || 'message')); }
   else if (t.dataset.act === 'share') share();
   else if (t.dataset.act === 'reset') {
     if (confirm('Effacer toutes vos réponses sur cet appareil ?')) { reset(); location.hash = '#/'; route(); }
@@ -749,6 +752,7 @@ window.addEventListener('hashchange', route);
   D.baseQuestions = D.questions;
   D.questions = orderQuestions(D.baseQuestions);
   document.getElementById('foot-version').textContent = `Version ${D.version.version} · ${frDate(D.version.date)}`;
+  if (CFG.SOURCE_URL) { const n = document.querySelector('.footlinks'); if (n) n.insertAdjacentHTML('beforeend', `<a href="${esc(CFG.SOURCE_URL)}" target="_blank" rel="noopener noreferrer">Code source</a>`); }
   counter('GET');
   ready = true;
   route();

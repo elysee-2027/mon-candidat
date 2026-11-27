@@ -59,3 +59,17 @@ Tant que `CONTACT_URL` est vide, renseigner `ISSUES_URL` dans `js/config.js` (pa
 ## Positions déduites du silence
 
 Chaque question a une `nature` : `etabli` (sujet déjà en place) ou `actuel` (récent ou en débat, liste `ACTUEL` dans `tools/build_questions.py`). Pour un sujet établi, `tools/gen.py` attribue aux candidats de `COMPLETS` dont le programme complet ne mentionne jamais le sujet une position déduite (niveau `silence`, statut `deduit`) : −1 « ne le propose pas » si l'affirmation demande un changement, +1 « ne le remet pas en cause » si elle défend l'existant (champ `statuquo`). Pour un sujet actuel, rien n'est déduit. Les règles (termes de recherche, thème de couverture, seuil `couverture_min`) sont dans `tools/silence_propositions.json` ; si le sujet est mentionné, `gen.py` signale « À EXAMINER » et n'ajoute rien. `python3 tools/silence_dryrun.py <corpus>` simule sans écrire ; `python3 tools/simulate_profils.py` compare le classement avant/après sur cinq profils types.
+
+## Publier une mise à jour sur le dépôt public
+
+Ce dépôt sert de préparation. Le dépôt public (compte dédié, un seul auteur) ne doit jamais recevoir cet historique. Pour chaque mise à jour :
+
+1. `REPO=mon-candidat NOGIT=1 tools/make-clean-copy.sh <dossier-vide> <pseudonyme> <url-du-site>` écrit les fichiers à publier, sans Git, avec les adresses du site public (et `ISSUES_URL`).
+2. Dans le clone du dépôt public : supprimer tout sauf `.git`, copier les fichiers, puis relire les différences dans GitHub Desktop.
+3. Valider sous l'identité du compte anonyme (`git config user.email` doit afficher l'adresse « noreply »), créer la branche puis la pull request si `main` est protégé, fusionner.
+
+Vérifier ensuite : `grep -ri <ancien-pseudonyme> .` ne doit rien trouver, et `data/version.json` doit porter la version attendue.
+
+## Licences
+
+Code : GNU AGPL-3.0 (`LICENSE`). Données : CC BY-SA 4.0 (`LICENSE-DATA.md`). Identité visuelle : tous droits réservés (`identite/LICENSE.md`). Polices Inter : OFL. Citations : propriété de leurs auteurs. Détail dans `NOTICE.md`. Titulaire : le pseudonyme du compte éditeur.
