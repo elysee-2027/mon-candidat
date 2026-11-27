@@ -1,0 +1,38 @@
+[
+ {
+  "id": "bertrand",
+  "nom": "Xavier Bertrand",
+  "parti": "Nous France",
+  "couleur": "#4A90D9",
+  "declaration": "Se dit candidat (« Je le serai », 27 août 2026) mais présenté par Le Figaro en septembre comme « candidat non déclaré » ; annonce officielle attendue en fin d'année",
+  "sourceDeclaration": "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+  "programme": {
+   "titre": "Pas de programme publié ; articles de presse repris par Nous France",
+   "url": "https://www.nousfrance.fr/les-actualites/"
+  },
+  "retrait": "Retiré le 16 novembre 2026 : candidature non clairement déclarée"
+ },
+ {
+  "id": "lassalle",
+  "nom": "Jean Lassalle",
+  "parti": "Résistons",
+  "couleur": "#7FB3D5",
+  "declaration": "Collecte de parrainages lancée en novembre 2026 ; se disait encore indécis le 8 octobre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "retrait": "Retiré le 16 novembre 2026 : candidature non clairement déclarée"
+ },
+ {
+  "id": "ruffin",
+  "nom": "François Ruffin",
+  "parti": "Debout !",
+  "couleur": "#F0703C",
+  "declaration": "Déclaré le 1er avril 2025",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Cahiers de campagne « Nous Président ! »",
+   "url": "https://nouspresident.fr/cahiers-de-campagne/"
+  },
+  "retrait": "Retrait annoncé le 21 novembre 2026 (« je prends acte de l'impasse » faute de primaire à gauche) ; ne soutient aucun candidat",
+  "sourceRetrait": "https://www.letemps.ch/en/world/france/at-an-impasse-without-a-broad-left-wing-primary-francois-ruffin-pulls-out-of-the-race-for-the-elysee"
+ }
+]

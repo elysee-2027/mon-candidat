@@ -1,0 +1,962 @@
+[
+ {
+  "question": "q03",
+  "sujet": "",
+  "regex": "retraite|âge légal|62 ans|64 ans",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q05",
+  "sujet": "",
+  "regex": "\\bEPR\\b|nouveaux? réacteurs?|nouvelles? centrales?",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q06",
+  "sujet": "",
+  "regex": "éolien|photovolta|solaire|renouvelables?",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q07",
+  "sujet": "",
+  "regex": "transferts? de compétences?|fédéralis|souveraineté (?:européenne|partagée)|majorité qualifiée",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q10",
+  "sujet": "",
+  "regex": "préférence nationale|priorité nationale|réserv\\w+ aux Français|prestations sociales.{0,40}(?:Français|étrangers)",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q11",
+  "sujet": "",
+  "regex": "peines? planchers?|peine minimale",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q12",
+  "sujet": "",
+  "regex": "places? de prison|prisons?|établissements? pénitentiaires?|surpopulation carcérale",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q13",
+  "sujet": "",
+  "regex": "fin de vie|euthanasie|aide (?:active )?à mourir|suicide assisté|soins palliatifs",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q14",
+  "sujet": "",
+  "regex": "voile|signes? religieux|neutralité.{0,30}universit",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q15",
+  "sujet": "",
+  "regex": "proportionnelle|mode de scrutin",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q16",
+  "sujet": "",
+  "regex": "\\bRIC\\b|référendum d.initiative (?:citoyenne|populaire)",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q19",
+  "sujet": "",
+  "regex": "capitalisation|fonds de pension|épargne retraite",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q21",
+  "sujet": "",
+  "regex": "thermique|2035|moteurs? thermiques?",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q22",
+  "sujet": "",
+  "regex": "\\bZFE\\b|zones? à faibles émissions",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q23",
+  "sujet": "",
+  "regex": "\\bOTAN\\b|Alliance atlantique|atlantique|commandement intégré|alliés américains",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q24",
+  "sujet": "",
+  "regex": "défense européenne|armée européenne|Europe de la défense|défense commune|PESCO",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q25",
+  "sujet": "",
+  "regex": "régularis|sans-papiers|travailleurs sans papiers",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q27",
+  "sujet": "",
+  "regex": "majorité pénale|excuse de minorité|mineurs délinquants|ordonnance de 1945",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q28",
+  "sujet": "",
+  "regex": "aménagements? de peine|réductions? de peine|crédits? de réduction|libération conditionnelle|juge de l.application des peines",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q29",
+  "sujet": "",
+  "regex": "service national|service militaire|\\bSNU\\b",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q31",
+  "sujet": "",
+  "regex": "49[.-]3|article 49",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q32",
+  "sujet": "",
+  "regex": "révision de la Constitution|modifier la Constitution",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q33",
+  "sujet": "",
+  "regex": "nationalis|pôle public bancaire|service public de l.énergie",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q35",
+  "sujet": "",
+  "regex": "audiovisuel public|France Télévisions|Radio France|redevance",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q36",
+  "sujet": "",
+  "regex": "installation des médecins|déserts? médicaux|régulation de l.installation|zones? sous-denses|zones? sous-dotées",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q38",
+  "sujet": "",
+  "regex": "35 heures|32 heures|durée légale du travail|temps de travail|durée du travail",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q39",
+  "sujet": "",
+  "regex": "pesticides?|glyphosate|phytosanitaires?|néonicotino",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q41",
+  "sujet": "",
+  "regex": "aérien|avion|kérosène|vols? intérieurs?|aviation",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q42",
+  "sujet": "",
+  "regex": "\\bCEDH\\b|Cour européenne des droits|Convention européenne des droits",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q43",
+  "sujet": "",
+  "regex": "Schengen|contrôles? aux frontières|frontières? nationales?",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q44",
+  "sujet": "",
+  "regex": "Mercosur",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q45",
+  "sujet": "",
+  "regex": "\\bAME\\b|aide médicale d.État|aide médicale de l.État",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q46",
+  "sujet": "",
+  "regex": "rétention administrative|centres? de rétention|\\bCRA\\b|OQTF|éloignement",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q47",
+  "sujet": "",
+  "regex": "asile|demandeurs? d.asile|réfugiés?|\\bOFPRA\\b",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q48",
+  "sujet": "",
+  "regex": "cannabis|stupéfiants?|drogues?|amende forfaitaire",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q50",
+  "sujet": "",
+  "regex": "\\bLBD\\b|lanceurs? de balles|grenades? de désencerclement|maintien de l.ordre",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q51",
+  "sujet": "",
+  "regex": "redoublement|collège unique|sélection|savoirs fondamentaux",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q52",
+  "sujet": "",
+  "regex": "uniforme|tenue (?:unique|scolaire)",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q53",
+  "sujet": "",
+  "regex": "décentralisation|autonomie des (?:collectivités|territoires)|collectivités locales",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q55",
+  "sujet": "",
+  "regex": "septennat|mandat unique|durée du mandat",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q57",
+  "sujet": "",
+  "regex": "conditionn\\w+ des aides|aides publiques aux entreprises|contreparties",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q58",
+  "sujet": "",
+  "regex": "superprofits?|dividendes?|profits? des (?:grandes )?entreprises",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q60",
+  "sujet": "",
+  "regex": "encadrement des loyers|loyers?|gel des loyers",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q61",
+  "sujet": "",
+  "regex": "jours? de carence|arrêts? maladie",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q62",
+  "sujet": "",
+  "regex": "dépassements? d.honoraires|secteur 2|honoraires",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q63",
+  "sujet": "",
+  "regex": "prolongation|durée de vie|centrales? nucléaires? existantes|parc nucléaire",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q65",
+  "sujet": "",
+  "regex": "bassines?|retenues? d.eau|irrigation|réserves? d.eau",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q66",
+  "sujet": "",
+  "regex": "sortie de l.euro|sortir de l.euro|quitter l.euro|monnaie nationale|retour au franc|abandon de l.euro|zone euro|monnaie unique|euro (?:sur|trop)|pouvoir monétaire|souveraineté monétaire|\\bfranc\\b",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q67",
+  "sujet": "",
+  "regex": "dissuasion|force de frappe|parapluie nucléaire",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q68",
+  "sujet": "",
+  "regex": "budget (?:de l.Union|européen)|contribution (?:française|de la France)|cadre financier pluriannuel",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q69",
+  "sujet": "",
+  "regex": "regroupement familial",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q70",
+  "sujet": "",
+  "regex": "expuls|OQTF|délinquants étrangers|étrangers délinquants|double peine",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q71",
+  "sujet": "",
+  "regex": "accord de 1968|accord franco-algérien|Algérie|1968",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q72",
+  "sujet": "",
+  "regex": "comparution immédiate|justice des mineurs|mineurs délinquants",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q73",
+  "sujet": "",
+  "regex": "police de proximité|présence policière",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q74",
+  "sujet": "",
+  "regex": "police municipale|polices municipales",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q76",
+  "sujet": "",
+  "regex": "corrida|chasse à courre|tauromachie|vénerie",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q77",
+  "sujet": "",
+  "regex": "\\bIVG\\b|avortement|interruption volontaire de grossesse|droit des femmes à disposer",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q78",
+  "sujet": "",
+  "regex": "tirage au sort|tirés au sort|convention citoyenne|assemblée citoyenne",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q79",
+  "sujet": "",
+  "regex": "vote blanc|vote obligatoire",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q80",
+  "sujet": "",
+  "regex": "droit de vote des étrangers|vote des étrangers",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q81",
+  "sujet": "",
+  "regex": "planification|planifier",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q83",
+  "sujet": "",
+  "regex": "flat tax|prélèvement forfaitaire|\\bPFU\\b|revenus du capital",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q84",
+  "sujet": "",
+  "regex": "minimum vieillesse|petites retraites|retraite minimum|pensions? minimum|\\bASPA\\b",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q85",
+  "sujet": "",
+  "regex": "remboursement|tiers payant|mutuelles?|reste à charge",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q86",
+  "sujet": "",
+  "regex": "allocations? familiales?|premier enfant|politique familiale",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q87",
+  "sujet": "",
+  "regex": "pétrole|énergies? fossiles?|sortie des fossiles",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q89",
+  "sujet": "",
+  "regex": "carbone aux frontières|\\bMACF\\b|taxe carbone|mécanisme d.ajustement",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q90",
+  "sujet": "",
+  "regex": "marché (?:européen )?de l.électricité|tarif réglementé",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q92",
+  "sujet": "",
+  "regex": "délit de séjour irrégulier|séjour irrégulier|délit d.entrée irrégulière",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q93",
+  "sujet": "",
+  "regex": "immigration (?:de travail|professionnelle)|voies légales|métiers en tension",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q94",
+  "sujet": "",
+  "regex": "naturalisation|acquisition de la nationalité|code de la nationalité",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q95",
+  "sujet": "",
+  "regex": "légitime défense|usage des armes",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q96",
+  "sujet": "",
+  "regex": "\\bIGPN\\b|\\bIGGN\\b|inspection générale de la police|autorité indépendante",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q97",
+  "sujet": "",
+  "regex": "haute sécurité|narcotrafic|narcotrafiquants",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q98",
+  "sujet": "",
+  "regex": "enseignement privé|écoles? privées?|sous contrat|loi Debré",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q99",
+  "sujet": "",
+  "regex": "voile (?:islamique|intégral)|burqa|niqab|port du voile|interdire le voile",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q100",
+  "sujet": "",
+  "regex": "VIe République|6e République|Constituante|nouvelle Constitution",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q101",
+  "sujet": "",
+  "regex": "révocat|référendum révocatoire|mandat impératif|révoquer",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q102",
+  "sujet": "",
+  "regex": "16 ans|vote à 16|âge du vote",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q103",
+  "sujet": "",
+  "regex": "Sénat|sénateurs?|Chambre haute",
+  "couverture": "institutions|démocratie|Constitution|élus?|Parlement|élections?|référendum",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q104",
+  "sujet": "",
+  "regex": "dépenses? militaires?|budget des armées|loi de programmation militaire|\\bLPM\\b|effort de défense",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q105",
+  "sujet": "",
+  "regex": "bases? militaires?|troupes? (?:françaises )?à l.étranger|opérations extérieures",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q106",
+  "sujet": "",
+  "regex": "sanctions? (?:contre|à l.encontre de) la Russie|levée des sanctions|embargo",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q108",
+  "sujet": "",
+  "regex": "exportations? d.armes?|ventes? d.armes?|commerce des armes",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q110",
+  "sujet": "",
+  "regex": "travailleurs? détachés?|directive (?:sur le )?détachement",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q111",
+  "sujet": "",
+  "regex": "\\bPAC\\b|politique agricole commune|politique agricole",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q112",
+  "sujet": "",
+  "regex": "préférence européenne|achats? européens?|armements? européens?",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q114",
+  "sujet": "",
+  "regex": "réserve (?:militaire|opérationnelle)|garde nationale|réservistes?",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q115",
+  "sujet": "",
+  "regex": "cannabis|dépénalis",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q116",
+  "sujet": "",
+  "regex": "changement de sexe|changement de genre|transidentité|transgenres?|mention de sexe",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q118",
+  "sujet": "",
+  "regex": "cirques?|delphinariums?|animaux sauvages",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q119",
+  "sujet": "",
+  "regex": "histoire de France|récit national|roman national",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q120",
+  "sujet": "",
+  "regex": "écriture inclusive|langage inclusif|point médian",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q121",
+  "sujet": "",
+  "regex": "prostitu|travail du sexe|proxénétisme",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q122",
+  "sujet": "",
+  "regex": "Concordat|Alsace-Moselle|statut local",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q123",
+  "sujet": "",
+  "regex": "accompagnateurs? scolaires?|sorties scolaires|mères voilées",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q124",
+  "sujet": "",
+  "regex": "lieux? de culte|mosquées?|charte des principes",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q130",
+  "sujet": "",
+  "regex": "peine de mort|peine capitale|rétablir la peine|peine ultime",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q131",
+  "sujet": "",
+  "regex": "perpétuité|incompressible|période de sûreté",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q134",
+  "sujet": "",
+  "regex": "sortie du nucléaire|sortir du nucléaire|arrêt du nucléaire|renoncer au nucléaire",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q135",
+  "sujet": "",
+  "regex": "tarification à l.acte|\\bT2A\\b|tarification à l.activité",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q137",
+  "sujet": "",
+  "regex": "instructions? individuelles?|indépendance du parquet|garde des Sceaux",
+  "couverture": "sécurité|police|justice|prison|peine|délinquance",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q138",
+  "sujet": "",
+  "regex": "EHPAD|Ehpad|maisons? de retraite",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q01",
+  "sujet": "l'impôt sur la fortune ou un impôt plancher sur les très hauts patrimoines",
+  "regex": "\\bISF\\b|impôt sur la fortune|impôt sur les (?:très )?grandes fortunes|Zucman|impôt plancher|ultra-?riches|milliardaires|patrimoines? (?:supérieurs?|financiers?|immobiliers?)",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q09",
+  "sujet": "la réduction de l'immigration légale",
+  "regex": "immigration légale|immigration (?:de travail|familiale)|quotas?|réduire l.immigration|baisse de l.immigration|baisser l.immigration|limiter l.immigration|maîtris\\w+ l.immigration|plafond\\w* (?:d.|de )immigration",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q02",
+  "sujet": "la baisse de la dépense publique et du nombre d'agents publics",
+  "regex": "dépenses? publiques?|nombre de fonctionnaires|suppression de [\\d\\s]+postes|agents publics|économies? (?:budgétaires|de \\d+)",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q04",
+  "sujet": "le SMIC à 1 600 euros net",
+  "regex": "\\bSMIC\\b|\\bSmic\\b|salaire minimum",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q18",
+  "sujet": "la suppression ou la forte baisse des droits de succession",
+  "regex": "droits? de succession|héritage|transmission du patrimoine|droits? de donation|donations?",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q20",
+  "sujet": "le durcissement de l'indemnisation du chômage",
+  "regex": "assurance[- ]chômage|indemnisation du chômage|allocations? chômage|Unédic|dégressiv",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q26",
+  "sujet": "la suppression ou la restriction du droit du sol",
+  "regex": "droit du sol|acquisition de la nationalité|naturalisation|nationalité française",
+  "couverture": "immigration|étrangers?|nationalité|asile|titre de séjour",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q34",
+  "sujet": "le relèvement des droits de douane",
+  "regex": "droits? de douane|protectionnis|taxes? (?:carbone )?aux frontières|préférence européenne|tarifs douaniers|barrières commerciales|taxes? à l.importation|libre-échange",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q64",
+  "sujet": "l'assouplissement ou la suppression du ZAN",
+  "regex": "\\bZAN\\b|zéro artificialisation|artificialisation",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q117",
+  "sujet": "l'interdiction d'organisations islamistes et la fermeture de lieux de culte",
+  "regex": "Frères musulmans|islamisme|islamiste|séparatisme|salafis|fermer (?:les )?mosquées|fermeture de mosquées",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": -1
+ },
+ {
+  "question": "q08",
+  "sujet": "",
+  "regex": "Ukraine",
+  "couverture": "défense|armée|militaire|OTAN|armées|dissuasion",
+  "couverture_min": 15,
+  "score": 1
+ },
+ {
+  "question": "q17",
+  "sujet": "",
+  "regex": "impôts? de production|\\bCVAE\\b|\\bCFE\\b|\\bC3S\\b",
+  "couverture": "fiscalité|impôts?|économie|budget|entreprises?|dépenses? publiques?",
+  "couverture_min": 15,
+  "score": 1
+ },
+ {
+  "question": "q30",
+  "sujet": "",
+  "regex": "\\bGPA\\b|gestation pour autrui|mères porteuses",
+  "couverture": "école|éducation|culture|famille|laïcité|société|animaux|religion",
+  "couverture_min": 15,
+  "score": 1
+ },
+ {
+  "question": "q37",
+  "sujet": "",
+  "regex": "loi SRU|logements? sociaux|quotas? de logements? sociaux",
+  "couverture": "retraites?|santé|emploi|chômage|salaires?|travail|sécurité sociale|logement",
+  "couverture_min": 15,
+  "score": 1
+ },
+ {
+  "question": "q40",
+  "sujet": "",
+  "regex": "passoires? thermiques?|\\bDPE\\b|logements? énergivores?|rénovation énergétique",
+  "couverture": "écologi|climat|énergie|environnement|transition",
+  "couverture_min": 15,
+  "score": 1
+ },
+ {
+  "question": "q109",
+  "sujet": "",
+  "regex": "élargissement|adhésion de l.Ukraine|Balkans occidentaux",
+  "couverture": "Europe|européen",
+  "couverture_min": 15,
+  "score": 1
+ }
+]

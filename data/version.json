@@ -1,0 +1,262 @@
+{
+ "version": "1.41",
+ "date": "2026-11-27",
+ "statut": "Proposition en attente de validation",
+ "historique": [
+  {
+   "version": "1.41",
+   "date": "2026-11-27",
+   "resume": "Réponses d'un candidat sur un thème : s'affichent dans une fenêtre au-dessus de toute la page (fond assombri, défilement propre, fermeture par la croix, le fond ou Échap)."
+  },
+  {
+   "version": "1.40",
+   "date": "2026-11-27",
+   "resume": "Réponses d'un candidat sur un thème : réduites aux questions où une position est identifiée."
+  },
+  {
+   "version": "1.39",
+   "date": "2026-11-27",
+   "resume": "Pistes : en touchant le marqueur d'un candidat (ou votre étoile) sur un thème, on voit ses réponses aux questions de ce thème, avec votre réponse en regard, la citation et la source."
+  },
+  {
+   "version": "1.38",
+   "date": "2026-11-27",
+   "resume": "Questionnaire : « Suivant » et « Passer » ne proposent plus que des questions pas encore répondues (plus de répétitions après une mise à jour des questions) ; les pages de série reviennent environ toutes les 8 à 10 nouvelles réponses."
+  },
+  {
+   "version": "1.37",
+   "date": "2026-11-27",
+   "resume": "Axe Défense inversé : « Indépendance et non-alignement » à gauche, « Alliances et défense commune » à droite ; le sens de ses 9 questions est inversé, les résultats gardent la même signification."
+  },
+  {
+   "version": "1.36",
+   "date": "2026-11-27",
+   "resume": "Questions : les boutons « Passer » et « Suivant » sont placés avant « Ce qu'en disent les candidats »."
+  },
+  {
+   "version": "1.35",
+   "date": "2026-11-27",
+   "resume": "Pistes : case à cocher « Relier les positions par une ligne » pour afficher ou masquer les lignes entre les positions des candidats cochés et les vôtres."
+  },
+  {
+   "version": "1.34",
+   "date": "2026-11-27",
+   "resume": "Sujets établis / sujets actuels : pour les sujets déjà en place (IVG, peine de mort, euro, OTAN…), un candidat à programme complet qui n'en parle pas valide le statu quo (605 positions déduites) ; pour les sujets actuels (règle d'or…), se taire n'est pas un avis. Candidats à programme complet : 11 (ajout de Dupont-Aignan, Branco, Philippot)."
+  },
+  {
+   "version": "1.33",
+   "date": "2026-11-27",
+   "resume": "Pistes : la légende « ★ Vous » n'est donnée que sur la ligne « Global », pas sur chaque thème."
+  },
+  {
+   "version": "1.32",
+   "date": "2026-11-27",
+   "resume": "Pistes : quand des candidats sont cochés, une ligne fine relie leurs positions d'un thème au suivant, et les vôtres ; pointillés quand un thème est sauté."
+  },
+  {
+   "version": "1.31",
+   "date": "2026-11-27",
+   "resume": "Pistes : sur chaque thème, les noms passent dans une légende pleine largeur sous la piste (noms abrégés à 5 lettres si besoin), comme sur la ligne « Global » ; colonne des libellés élargie."
+  },
+  {
+   "version": "1.30",
+   "date": "2026-11-27",
+   "resume": "Ligne « Global » : la légende occupe toute la largeur ; noms entiers si tout tient sur une ligne, sinon les 5 premières lettres suivies de « … »."
+  },
+  {
+   "version": "1.29",
+   "date": "2026-11-27",
+   "resume": "Votre marqueur devient une étoile blanche (plus de jaune) ; chaque candidat a la même forme et la même couleur sur toute la page de résultats (7 formes, couleurs de remplacement attribuées une fois pour toutes, aucun conflit entre candidats)."
+  },
+  {
+   "version": "1.28",
+   "date": "2026-11-27",
+   "resume": "Pistes : votre position est une étoile dorée dont les branches dépassent des formes des candidats ; la ligne « Global » n'a plus d'étiquettes sur la piste mais une légende en dessous."
+  },
+  {
+   "version": "1.27",
+   "date": "2026-11-27",
+   "resume": "Interface : contrôle de tri de « Comparer avec » refait (texte centré, deux boutons égaux) ; en-tête des pistes allégé."
+  },
+  {
+   "version": "1.26",
+   "date": "2026-11-26",
+   "resume": "Liste « Comparer avec » : l'option « Tiré au sort » est retirée (ordre alphabétique ou par proximité)."
+  },
+  {
+   "version": "1.25",
+   "date": "2026-11-26",
+   "resume": "Titre du programme de Marine Tondelier corrigé (retrait d'une note de travail)."
+  },
+  {
+   "version": "1.24",
+   "date": "2026-11-26",
+   "resume": "Proximité par candidat : chaque ligne reprend les informations de la liste des candidats déclarés (déclaration, lien vers le programme, nombre de questions documentées)."
+  },
+  {
+   "version": "1.23",
+   "date": "2026-11-26",
+   "resume": "Ligne « Global » : votre marqueur est ajouté à 100 % (point de référence), les candidats se placent selon leur proximité avec vous."
+  },
+  {
+   "version": "1.22",
+   "date": "2026-11-26",
+   "resume": "Liste « Comparer avec » : ordre alphabétique par défaut, tri par proximité ou tirage au sort au choix."
+  },
+  {
+   "version": "1.21",
+   "date": "2026-11-26",
+   "resume": "Pistes : ligne « Global » en tête (proximité de 0 à 100 % avec les deux candidats les plus proches, ou ceux que vous cochez)."
+  },
+  {
+   "version": "1.20",
+   "date": "2026-11-25",
+   "resume": "Statuts des candidats vérifiés (LCP, 23 novembre 2026) : François Ruffin retiré (retrait de sa candidature annoncé le 21 novembre, source AFP), ses 30 positions retirées des données ; Dominique de Villepin ajouté (candidature officialisée le 20 novembre), sans position sourcée pour l'instant. 36 candidats."
+  },
+  {
+   "version": "1.19",
+   "date": "2026-11-25",
+   "resume": "Pistes : en sélection manuelle, un candidat garde la même couleur et la même forme sur tous les thèmes (comme dans la légende) ; marqueurs creux (et non plus pâles) quand une seule position est identifiée ; échelle rentrée pour que les marqueurs aux extrémités restent dans la piste ; étiquettes sur fond plein."
+  },
+  {
+   "version": "1.18",
+   "date": "2026-11-25",
+   "resume": "Orientation des axes : à gauche, le pôle habituellement associé à la gauche. Seul l'axe Institutions est inversé (« Refonte démocratique et participation directe » passe à gauche) ; le sens de ses 11 questions est inversé pour que les résultats gardent exactement la même signification."
+  },
+  {
+   "version": "1.17",
+   "date": "2026-11-25",
+   "resume": "Positions déduites du silence étendues avec prudence : 7 « ne le propose pas » de plus (SMIC, chômage, droit du sol, ZAN, organisations islamistes), uniquement pour les candidats à programme complet dont le texte ne mentionne jamais le sujet et couvre bien le thème. 32 cas où le sujet est mentionné restent sans position automatique."
+  },
+  {
+   "version": "1.16",
+   "date": "2026-11-25",
+   "resume": "Pilote des positions déduites du silence : sur « quitter l'UE », 9 candidats à programme complet qui n'évoquent jamais le sujet reçoivent « ne le propose pas » (plutôt opposé), signalé comme déduit, avec le nombre de pages parcourues."
+  },
+  {
+   "version": "1.15",
+   "date": "2026-11-25",
+   "resume": "Proximité : une question n'y entre que si ses positions documentées sont des deux côtés ou si au moins 3 candidats sont documentés ; sinon elle reste posée mais ne pénalise pas les candidats qui se sont exprimés (25 questions concernées)."
+  },
+  {
+   "version": "1.14",
+   "date": "2026-11-25",
+   "resume": "Page d'accueil sans illustration : accroche, bouton Commencer en haut de l'écran, trois étapes (répondre, comparer, vérifier)."
+  },
+  {
+   "version": "1.13",
+   "date": "2026-11-25",
+   "resume": "Ordre des questions : tirage pondéré (les questions bien documentées ont plus de chances de sortir tôt, sans règle fixe) à la place de « la moitié la mieux couverte d'abord » ; plus de variété d'un parcours à l'autre."
+  },
+  {
+   "version": "1.12",
+   "date": "2026-11-25",
+   "resume": "4 questions (tarification à l'acte à l'hôpital, groupes de niveau au collège, instructions du garde des Sceaux aux procureurs, EHPAD à but lucratif), 14 positions citées. Contact sans serveur par ticket GitHub (ISSUES_URL) et cache-busting des scripts."
+  },
+  {
+   "version": "1.11",
+   "date": "2026-11-25",
+   "resume": "Le radar est remplacé par des pistes : une ligne par thème, les deux pôles écrits aux extrémités, la neutralité au milieu, tous les thèmes affichés. Les questions « hors radar » deviennent « hors graphe »."
+  },
+  {
+   "version": "1.10",
+   "date": "2026-11-25",
+   "resume": "6 questions sur des sujets très clivants (sortie de l'Union européenne, peine de mort, perpétuité réelle, expulsion des chômeurs étrangers, statut de la Corse, sortie du nucléaire), 12 positions citées, souvent peu nombreuses ; les questions clivantes déjà présentes ne sont plus reléguées en fin de thème."
+  },
+  {
+   "version": "1.9",
+   "date": "2026-11-16",
+   "resume": "Questions d'actualité : 4 questions hors radar sur des sujets qui ont fait réagir plusieurs candidats (carburants, aide à l'Ukraine, responsabilité des parents, salaires des enseignants), 25 positions citées, retrait automatique à la date d'échéance, script de contrôle tools/check_actualite.py."
+  },
+  {
+   "version": "1.8",
+   "date": "2026-11-16",
+   "resume": "Serveur NAS (Docker, SQLite, tunnel Cloudflare) pour les statistiques anonymes et le formulaire de contact ; script de copie propre pour un dépôt sans historique ; textes de confidentialité mis à jour."
+  },
+  {
+   "version": "1.7",
+   "date": "2026-11-16",
+   "resume": "Statistiques anonymes facultatives (désactivées tant qu'aucun service n'est relié) : accord explicite, compteurs seuls, réponses en partie brouillées au hasard, aucune adresse IP conservée. Service et tableau de bord privé dans tools/stats-worker."
+  },
+  {
+   "version": "1.6",
+   "date": "2026-11-16",
+   "resume": "Avertissement, mentions légales et confidentialité, formulaire de contact anonyme (lien « Signaler une erreur » sous chaque citation). Polices hébergées sur le site : aucune requête vers un service tiers."
+  },
+  {
+   "version": "1.5",
+   "date": "2026-11-16",
+   "resume": "Les sept questions sur la laïcité passent hors radar (thème « Laïcité ») : elles comptent dans la proximité sans brouiller l'axe Société."
+  },
+  {
+   "version": "1.4",
+   "date": "2026-11-16",
+   "resume": "124 questions, 572 positions : trois questions sur la laïcité (Concordat d'Alsace-Moselle, neutralité des accompagnateurs de sorties scolaires, engagement républicain des lieux de culte)."
+  },
+  {
+   "version": "1.3",
+   "date": "2026-11-16",
+   "resume": "121 questions, 567 positions : sept questions Société (cannabis, changement de genre, islamisme, animaux de spectacle, récit national, écriture inclusive, prostitution)."
+  },
+  {
+   "version": "1.2",
+   "date": "2026-11-16",
+   "resume": "114 questions, 545 positions : élargissement de l'UE, travailleurs détachés, PAC, préférence européenne pour l'armement, défense européenne autonome, réserve militaire (hors radar)."
+  },
+  {
+   "version": "1.1",
+   "date": "2026-11-16",
+   "resume": "Neuf axes : l'Union européenne et la défense deviennent deux axes distincts, l'écologie mesure l'ambition de la transition, les institutions la refonte démocratique. Neuf questions hors radar (énergie, territoires, enfance et numérique, international). 108 questions, 524 positions."
+  },
+  {
+   "version": "1.0",
+   "date": "2026-11-16",
+   "resume": "103 questions, 506 positions citées. Nouveaux sujets : planification, normes, flat tax, petites retraites, sortie des fossiles, marché européen de l'électricité, délit de séjour, légitime défense, enseignement privé, VIe République, révocation des élus, vote à 16 ans, Sénat."
+  },
+  {
+   "version": "0.9",
+   "date": "2026-11-16",
+   "resume": "Ordre des questions semi-aléatoire, propre à chaque appareil : une question par thème dans chaque série, axes toujours équilibrés, questions les mieux documentées en premier."
+  },
+  {
+   "version": "0.8",
+   "date": "2026-11-16",
+   "resume": "80 questions en 10 séries, 434 positions. Couleurs du graphe toujours distinctes : couleur de remplacement si deux couleurs sont trop proches, tracés et marqueurs différents par candidat."
+  },
+  {
+   "version": "0.7",
+   "date": "2026-11-16",
+   "resume": "Retrait de Xavier Bertrand et Jean Lassalle, dont la candidature n'est pas clairement déclarée (conservés dans data/candidats_en_attente.json). 36 candidats, 345 positions."
+  },
+  {
+   "version": "0.6",
+   "date": "2026-11-16",
+   "resume": "351 positions pour 27 candidats : premières positions de Gilles Platret et Olivier Becht, tirées de la presse."
+  },
+  {
+   "version": "0.5",
+   "date": "2026-11-16",
+   "resume": "346 positions pour 25 candidats : ajout de Philippot, Branco, Kazib, Mikolajczak, Labib, Markovic, Egger et Batho, à partir de leurs programmes et discours publiés."
+  },
+  {
+   "version": "0.4",
+   "date": "2026-11-16",
+   "resume": "281 positions. Ajout des priorités publiées par Éric Zemmour et de premières positions pour Teddy Riner, Karim Bouamrane et Natacha Polony (presse et sites de campagne)."
+  },
+  {
+   "version": "0.3",
+   "date": "2026-11-16",
+   "resume": "56 questions en 7 séries, 268 positions citées. Ajout de déclarations rapportées par la presse quand le programme manque (Tondelier, Bertrand, Le Pen, Retailleau, Philippe, Glucksmann)."
+  },
+  {
+   "version": "0.2",
+   "date": "2026-11-16",
+   "resume": "32 questions en 4 séries de 8, graphe accessible dès 8 réponses avec un avis, 165 positions citées. L'axe Écologie et énergie couvre aussi les normes environnementales."
+  },
+  {
+   "version": "0.1",
+   "date": "2026-11-16",
+   "resume": "Première proposition : 38 candidats déclarés, 8 axes, 16 questions, 91 positions tirées des programmes publiés par 12 candidats."
+  }
+ ]
+}

@@ -1,0 +1,374 @@
+[
+ {
+  "id": "arthaud",
+  "nom": "Nathalie Arthaud",
+  "parti": "Lutte ouvrière",
+  "couleur": "#E0403A",
+  "declaration": "Déclarée le 8 décembre 2025",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Brochure de Lutte ouvrière, été 2026",
+   "url": "https://www.lutte-ouvriere.org/medias/document/fichiers/2026/06/brochure-ete-2026.pdf"
+  }
+ },
+ {
+  "id": "asselineau",
+  "nom": "François Asselineau",
+  "parti": "Union populaire républicaine",
+  "couleur": "#2FA3A0",
+  "declaration": "",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "attal",
+  "nom": "Gabriel Attal",
+  "parti": "Renaissance",
+  "couleur": "#F5B700",
+  "declaration": "Déclaré le 22 mai 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Programme en ligne « Mes chantiers capitaux »",
+   "url": "https://attalpresident.fr/programme"
+  }
+ },
+ {
+  "id": "batho",
+  "nom": "Delphine Batho",
+  "parti": "Génération écologie",
+  "couleur": "#4FC36A",
+  "declaration": "Déclarée le 25 novembre 2025",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Priorités publiées sur le site de campagne",
+   "url": "https://delphinebatho.fr/priorites/"
+  }
+ },
+ {
+  "id": "becht",
+  "nom": "Olivier Becht",
+  "parti": "Apparenté Renaissance",
+  "couleur": "#F7CE5B",
+  "declaration": "Déclaré le 24 septembre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "billetdoux",
+  "nom": "Augustin Billetdoux",
+  "parti": "Sans étiquette",
+  "couleur": "#9AA3B2",
+  "declaration": "Déclaré en septembre 2025",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "bouamrane",
+  "nom": "Karim Bouamrane",
+  "parti": "Parti socialiste",
+  "couleur": "#F06292",
+  "declaration": "Déclaré le 9 juin 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "branco",
+  "nom": "Juan Branco",
+  "parti": "Les Ruches",
+  "couleur": "#9AA3B2",
+  "declaration": "Déclaré en décembre 2025",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Le projet des Ruches",
+   "url": "https://ruches.org/le-projet"
+  }
+ },
+ {
+  "id": "cheve",
+  "nom": "Joël Chevé",
+  "parti": "La France adulte",
+  "couleur": "#9AA3B2",
+  "declaration": "",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "collovati",
+  "nom": "Christian Collovati",
+  "parti": "Sans étiquette",
+  "couleur": "#9AA3B2",
+  "declaration": "",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "nda",
+  "nom": "Nicolas Dupont-Aignan",
+  "parti": "Debout la France",
+  "couleur": "#7C8FE0",
+  "declaration": "Candidature officialisée en septembre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Le projet de Debout la France",
+   "url": "https://www.debout-la-france.fr/notre-projet/"
+  }
+ },
+ {
+  "id": "durif",
+  "nom": "Sylvain Durif",
+  "parti": "Sans étiquette",
+  "couleur": "#9AA3B2",
+  "declaration": "Déclaré le 23 août 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "egger",
+  "nom": "Clara Egger",
+  "parti": "Solution démocratique",
+  "couleur": "#9AA3B2",
+  "declaration": "",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Programme de Solution démocratique 2027",
+   "url": "https://solutiondemocratique.fr/programme-presidentielle/"
+  }
+ },
+ {
+  "id": "glucksmann",
+  "nom": "Raphaël Glucksmann",
+  "parti": "Place publique",
+  "couleur": "#FF8A3D",
+  "declaration": "Désigné par la primaire du 11 octobre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Projet de Place publique, Acte I",
+   "url": "https://place-publique.eu/document/6J8wjk3EW8dBCLwKxa7J96/projet-placepublique-acte1.pdf"
+  }
+ },
+ {
+  "id": "kazib",
+  "nom": "Anasse Kazib",
+  "parti": "Révolution permanente",
+  "couleur": "#C8423B",
+  "declaration": "Déclaré le 1er juin 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Premières mesures de campagne",
+   "url": "https://anasse2027.fr/programme"
+  }
+ },
+ {
+  "id": "labib",
+  "nom": "Selma Labib",
+  "parti": "NPA-Révolutionnaires",
+  "couleur": "#D9534F",
+  "declaration": "Déclarée le 17 juin 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Discours à la fête de l'Humanité (septembre 2026)",
+   "url": "https://npa-revolutionnaires.org/articles/intervention-de-selma-labib-a-la-fete-de-lhumanite-2026"
+  }
+ },
+ {
+  "id": "lalanne",
+  "nom": "Francis Lalanne",
+  "parti": "Sans étiquette",
+  "couleur": "#9AA3B2",
+  "declaration": "Déclaré le 19 août 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "lepen",
+  "nom": "Marine Le Pen",
+  "parti": "Rassemblement national",
+  "couleur": "#4F6FD0",
+  "declaration": "Candidature confirmée le 7 juillet 2026 ; pourvoi en cassation en cours",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Programme du RN pour les législatives de 2024",
+   "url": "https://rassemblementnational.fr/documents/202406-programme.pdf"
+  }
+ },
+ {
+  "id": "legendre",
+  "nom": "Jean-François Legendre",
+  "parti": "À nous maintenant",
+  "couleur": "#9AA3B2",
+  "declaration": "",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "lisnard",
+  "nom": "David Lisnard",
+  "parti": "Nouvelle Énergie",
+  "couleur": "#29B6C8",
+  "declaration": "Déclaré le 31 mars 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Programme de Nouvelle Énergie",
+   "url": "https://www.unenouvelleenergie.fr/notre-programme/"
+  }
+ },
+ {
+  "id": "markovic",
+  "nom": "Mira Markovic",
+  "parti": "Parti animaliste",
+  "couleur": "#A58BD6",
+  "declaration": "Déclarée le 2 octobre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Programme du Parti animaliste (rédigé pour 2022-2027)",
+   "url": "https://parti-animaliste.fr/programme"
+  }
+ },
+ {
+  "id": "mathieu",
+  "nom": "Benoît Mathieu",
+  "parti": "Sans étiquette",
+  "couleur": "#9AA3B2",
+  "declaration": "Déclaré le 30 mars 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "melenchon",
+  "nom": "Jean-Luc Mélenchon",
+  "parti": "La France insoumise",
+  "couleur": "#D4324B",
+  "declaration": "Déclaré le 3 mai 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "L'Avenir en commun, édition 2026",
+   "url": "https://melenchon2027.fr/programme/livre/"
+  }
+ },
+ {
+  "id": "mikolajczak",
+  "nom": "Antoine Mikolajczak",
+  "parti": "Équinoxe",
+  "couleur": "#E6C34A",
+  "declaration": "Désigné en avril 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Programme synthétique d'Équinoxe (novembre 2026)",
+   "url": "https://parti-equinoxe.fr/programme-2027/"
+  }
+ },
+ {
+  "id": "mlekuz",
+  "nom": "Manolo Mlekuz",
+  "parti": "Trajectoire",
+  "couleur": "#9AA3B2",
+  "declaration": "",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "philippe",
+  "nom": "Édouard Philippe",
+  "parti": "Horizons",
+  "couleur": "#33A9E0",
+  "declaration": "Déclaré le 3 septembre 2024",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Programme en ligne « Avec Édouard 2027 »",
+   "url": "https://www.edouardphilippe.fr/programme"
+  }
+ },
+ {
+  "id": "philippot",
+  "nom": "Florian Philippot",
+  "parti": "Les Patriotes",
+  "couleur": "#6577D6",
+  "declaration": "Déclaré le 9 mai 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Projet pour la France (Les Patriotes, 2026)",
+   "url": "https://les-patriotes.fr/wp-content/uploads/2026/09/Projet-pour-la-France-2026-v2.pdf"
+  }
+ },
+ {
+  "id": "platret",
+  "nom": "Gilles Platret",
+  "parti": "Divers droite",
+  "couleur": "#7FA8E0",
+  "declaration": "Déclaré le 8 octobre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "polony",
+  "nom": "Natacha Polony",
+  "parti": "Sans étiquette",
+  "couleur": "#9AA3B2",
+  "declaration": "Déclarée le 14 octobre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "« Ma vision pour la France » (site de campagne)",
+   "url": "https://natachapolony2027.fr/natacha-polony/ma-vision"
+  }
+ },
+ {
+  "id": "retailleau",
+  "nom": "Bruno Retailleau",
+  "parti": "Les Républicains",
+  "couleur": "#2F6FD0",
+  "declaration": "Désigné par les adhérents le 19 avril 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Livrets thématiques des Républicains",
+   "url": "https://republicains.fr/nos-propositions/"
+  }
+ },
+ {
+  "id": "riner",
+  "nom": "Teddy Riner",
+  "parti": "Sans étiquette",
+  "couleur": "#9AA3B2",
+  "declaration": "Déclaré le 9 novembre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "rohou",
+  "nom": "Erwan Rohou",
+  "parti": "Mouvement écologiste indépendant",
+  "couleur": "#7BC47F",
+  "declaration": "",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html"
+ },
+ {
+  "id": "roussel",
+  "nom": "Fabien Roussel",
+  "parti": "Parti communiste français",
+  "couleur": "#E8112D",
+  "declaration": "Désigné par le PCF le 6 septembre 2026",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Texte du 40e congrès du PCF",
+   "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf"
+  }
+ },
+ {
+  "id": "tondelier",
+  "nom": "Marine Tondelier",
+  "parti": "Les Écologistes",
+  "couleur": "#3DBE5B",
+  "declaration": "Déclarée le 22 octobre 2025",
+  "sourceDeclaration": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+  "programme": {
+   "titre": "Programme des Écologistes ; positions tirées de la presse",
+   "url": "https://lesecologistes.fr/"
+  }
+ },
+ {
+  "id": "zemmour",
+  "nom": "Éric Zemmour",
+  "parti": "Reconquête",
+  "couleur": "#A8937C",
+  "declaration": "Déclaré le 17 septembre 2026, confirmé le 10 novembre",
+  "sourceDeclaration": "https://fr.wikipedia.org/wiki/Candidatures_%C3%A0_l%27%C3%A9lection_pr%C3%A9sidentielle_fran%C3%A7aise_de_2027",
+  "programme": {
+   "titre": "Priorités publiées sur le site du candidat",
+   "url": "https://www.ericzemmour.fr/priorites"
+  }
+ },
+ {
+  "id": "villepin",
+  "nom": "Dominique de Villepin",
+  "parti": "La France humaniste",
+  "couleur": "#9B7EDE",
+  "declaration": "Candidature officialisée le 20 novembre 2026",
+  "sourceDeclaration": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-declares-et-potentiels-444932"
+ }
+]

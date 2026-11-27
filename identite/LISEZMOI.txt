@@ -1,0 +1,16 @@
+ÉLYSÉE 2027 — IDENTITÉ VISUELLE v1.0
+
+Palette : Nuit #0B1220 · Surface #121B2E · Trait #26344F · Texte #E6EBF5 · Texte secondaire #93A0B8 · Or (accent unique) #D8B45A
+Typographie : Inter (référence) — équivalents Source Sans 3 ou Geist (utilisée pour les maquettes).
+Le wordmark des fichiers logo est vectorisé (aucune police requise). Les SVG des maquettes, de l'image de partage et du guide utilisent du texte vivant : installer la police avant de les rouvrir, ou utiliser les PNG.
+
+1-icone-app : icône 1024 (marge de sécurité 15 %), 180/48/32/16 px (version simplifiée sous 32 px), monochrome (blanc / nuit, fond transparent), maskable Android (512, 192, 1024).
+2-logo : horizontal fond sombre, fond clair, monochrome nuit et blanc (avec et sans fond).
+3-favicon : favicon.svg (2 couleurs) + PNG 16/32.
+   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+   <link rel="apple-touch-icon" href="/icon-180.png">
+   manifest : { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+4-image-partage : 1200 × 630 (og:image / twitter:image).
+5-guide-de-marque : mini-guide (palette, typographie, zone de protection, usages interdits).
+6-maquettes-mobiles : accueil, question, résultat — 360 px et @2x, planche de présentation.
+Les contenus des maquettes (affirmation, thèmes, nombre de questions, « Candidat·e A/B/C ») sont fictifs.

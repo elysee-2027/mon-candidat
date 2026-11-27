@@ -1,0 +1,11 @@
+[
+ {"id":"eco","nom":"Économie et fiscalité","court":"Économie","poleA":"Intervention publique","poleB":"Liberté du marché"},
+ {"id":"social","nom":"Modèle social","court":"Social","poleA":"Protection collective","poleB":"Responsabilité individuelle"},
+ {"id":"ecologie","nom":"Écologie","court":"Écologie","poleA":"Transition contraignante et rapide","poleB":"Transition incitative, priorité aux usages"},
+ {"id":"europe","nom":"Union européenne","court":"UE","poleA":"Intégration européenne","poleB":"Souveraineté nationale"},
+ {"id":"defense","nom":"Défense et international","court":"Défense","poleA":"Indépendance et non-alignement","poleB":"Alliances et défense commune"},
+ {"id":"immigration","nom":"Immigration","court":"Immigration","poleA":"Ouverture","poleB":"Restriction"},
+ {"id":"securite","nom":"Sécurité et justice","court":"Sécurité","poleA":"Prévention","poleB":"Fermeté"},
+ {"id":"societe","nom":"Société","court":"Société","poleA":"Libéralisme culturel","poleB":"Conservatisme culturel"},
+ {"id":"institutions","nom":"Institutions","court":"Institutions","poleA":"Refonte démocratique et participation directe","poleB":"Institutions actuelles"}
+]

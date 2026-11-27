@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0B1220">
+<title>Élysée 2027 · Situez-vous face aux candidats</title>
+<meta name="description" content="Réagissez à des affirmations sur 9 thèmes, puis comparez vos positions aux programmes et déclarations des candidats déclarés à la présidentielle 2027, sources à l'appui.">
+<link rel="icon" href="identite/3-favicon/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="identite/3-favicon/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="identite/1-icone-app/icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Élysée 2027 · Situez-vous face aux candidats déclarés">
+<meta property="og:description" content="Un outil neutre et sourcé pour comparer vos positions à celles des candidats, thème par thème.">
+<meta property="og:image" content="https://elysee-2027.github.io/mon-candidat/identite/4-image-partage/partage-1200x630.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://elysee-2027.github.io/mon-candidat/identite/4-image-partage/partage-1200x630.png">
+<link rel="preload" href="fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=1.41">
+</head>
+<body>
+<header class="bar" id="bar">
+  <a class="brand" href="#/" aria-label="Élysée 2027, accueil">
+    <img src="identite/2-logo/logo-fond-sombre-transparent.svg" alt="Élysée 2027" width="119" height="40">
+  </a>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="#/candidats">Candidats</a>
+    <a class="info" href="#/methode" aria-label="Méthode et sources" title="Méthode et sources">i</a>
+  </nav>
+</header>
+<main id="app" tabindex="-1"><p class="loading">Chargement des dossiers…</p></main>
+<footer class="foot">
+  <nav class="footlinks" aria-label="Informations">
+    <a href="#/avertissement">Avertissement</a>
+    <a href="#/methode">Méthode</a>
+    <a href="#/mentions">Mentions légales et confidentialité</a>
+    <a href="#/contact">Contact</a>
+  </nav>
+  <span>Outil indépendant, sans lien avec un parti, un candidat ou un média. Ce n'est pas une consigne de vote.</span>
+  <span id="foot-version"></span>
+  <span id="foot-counter"></span>
+  <span>Vos réponses restent sur cet appareil. Aucune donnée personnelle n'est collectée ; le partage de statistiques anonymes est facultatif.</span>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="loading">Cet outil a besoin de JavaScript pour fonctionner.</p></noscript>
+<script src="js/config.js?v=1.41"></script>
+<script type="module" src="js/app.js?v=1.41"></script>
+</body>
+</html>
