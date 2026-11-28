@@ -1,9 +1,11 @@
 name = "elysee-compteur"
 main = "worker.js"
 compatibility_date = "2025-01-01"
+workers_dev = false   # pas d'adresse *.workers.dev : le Worker n'est joignable que sur le domaine
+routes = [{ pattern = "api.elysee-2027.win", custom_domain = true }]
 
 [vars]
-ALLOWED_ORIGIN = "https://elysee-2027.github.io"
+ALLOWED_ORIGIN = "https://elysee-2027.github.io,https://elysee-2027.win,https://www.elysee-2027.win"
 
 [[d1_databases]]
 binding = "DB"

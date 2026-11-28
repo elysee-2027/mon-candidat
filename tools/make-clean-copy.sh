@@ -11,6 +11,7 @@
 #   - remplace l'adresse du site dans les balises de partage et, si fournie, l'adresse de l'API ;
 #   - crée un dépôt Git neuf, avec un seul commit signé du pseudonyme (adresse « noreply » GitHub) ;
 #   - ne pousse rien : vous poussez vous-même, depuis votre compte dédié.
+#   - COUNTER=<url> : renseigne seulement COUNTER_URL (compteur global) ;
 #   - NOGIT=1 : n'écrit que les fichiers (pour mettre à jour un dépôt public existant, sans réécrire son historique).
 set -euo pipefail
 
@@ -26,7 +27,7 @@ git -C "$SRC" archive HEAD | tar -x -C "$DEST"
 
 # adresse du site dans les balises de partage
 python3 - "$DEST" "$SITE" "$API" "$PSEUDO" "$REPO" <<'PY'
-import re, sys, pathlib
+import re, sys, pathlib, os
 dest, site, api, pseudo, repo = pathlib.Path(sys.argv[1]), sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]
 p = dest / 'index.html'; s = p.read_text(encoding='utf-8')
 s = re.sub(r'https://[^"\s]*?/identite/4-image-partage/partage-1200x630\.png', site + '/identite/4-image-partage/partage-1200x630.png', s)
@@ -42,6 +43,11 @@ else:
     # sans serveur : le formulaire de contact ouvre un ticket GitHub prérempli
     p = dest / 'js' / 'config.js'; s = p.read_text(encoding='utf-8')
     s = re.sub(r"ISSUES_URL: '[^']*'", "ISSUES_URL: 'https://github.com/" + pseudo + "/" + repo + "/issues'", s)
+    p.write_text(s, encoding='utf-8')
+# COUNTER=<url> : active seulement le compteur global (ex. Worker Cloudflare), sans statistiques ni contact
+if os.environ.get('COUNTER'):
+    p = dest / 'js' / 'config.js'; s = p.read_text(encoding='utf-8')
+    s = re.sub(r"COUNTER_URL: '[^']*'", "COUNTER_URL: '" + os.environ['COUNTER'] + "'", s)
     p.write_text(s, encoding='utf-8')
 # adresse du dépôt public : lien « Code source » (AGPL, section 13)
 p = dest / 'js' / 'config.js'; s = p.read_text(encoding='utf-8')

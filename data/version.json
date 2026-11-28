@@ -1,8 +1,18 @@
 {
- "version": "1.47",
+ "version": "1.49",
  "date": "2026-11-27",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.49",
+   "date": "2026-11-28",
+   "resume": "Adresse de contact dédiée renseignée (écrite avec (at) et (dot) dans la source)."
+  },
+  {
+   "version": "1.48",
+   "date": "2026-11-28",
+   "resume": "Compteur global : Worker sur api.elysee-2027.win (sans workers.dev) ; mentions légales précisent le passage par Cloudflare quand le compteur est actif ; make-clean-copy accepte COUNTER=<url>."
+  },
   {
    "version": "1.47",
    "date": "2026-11-27",

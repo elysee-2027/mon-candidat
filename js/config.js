@@ -27,10 +27,10 @@
 window.E2027_CONFIG = {
   STATS_URL: '',
   STATS_P: 0.25,
-  COUNTER_URL: '',
+  COUNTER_URL: 'https://api.elysee-2027.win/counter',
   CONTACT_URL: '',
   ISSUES_URL: 'https://github.com/elysee-2027/mon-candidat/issues',
-  CONTACT_EMAIL: 'elysee.27@proton.me',
+  CONTACT_EMAIL: 'elysee.27 (at) proton (dot) me',
   CONTACT_SERVICE: '',
   HOST_INFO: '',
   LICENCE: 'AGPL-3.0 pour le code, CC BY-SA 4.0 pour les données',
