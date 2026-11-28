@@ -411,7 +411,7 @@ function viewHome() {
   </div>
   <a class="link-under" href="#/methode">Méthodologie et sources</a>
   <a class="link-under" href="#/avertissement" style="margin-top:8px">Avertissement : ce n'est pas une consigne de vote</a>
-  <div class="banner" style="margin-top:20px">Version de travail : les positions des candidats sont extraites de leurs textes et déclarations publiés, et attendent une validation humaine.</div>`;
+  <div class="banner" style="margin-top:20px">Les positions des candidats sont extraites de leurs textes et déclarations publiés, puis relues par l'éditeur (28 novembre 2026). Une erreur reste possible : signalez-la depuis la page Contact.</div>`;
 }
 
 function viewQuiz(n) {
@@ -423,13 +423,14 @@ function viewQuiz(n) {
   const nx = nextTodo(n), nextHref = !nx ? '#/resultats' : seriesOf(nx) !== serie && streak >= 8 ? '#/serie/' + serie : '#/quiz/' + nx;
   const set = !!a && a.v !== null && a.v !== undefined, lab = (v) => OPTIONS.find((o) => o.v === v).t;
   const na = !!a && a.v === null;
-  const opts = `${na ? '' : `<div class="scale">
-    <p class="scale-now${set ? ' on' : ''}" id="ans-now" aria-live="polite">${set ? lab(a.v) : 'Touchez ou glissez'}</p>
-    <div class="scale-box">${[0, 1, 2, 3, 4].map((k) => `<i class="tk" style="--k:${k}"></i>`).join('')}<input type="range" id="ans" min="-2" max="2" step="1" value="${set ? a.v : 0}" class="${set ? '' : 'unset'}" data-unset="${set ? 0 : 1}" aria-label="Votre position sur cette affirmation" aria-valuetext="${set ? lab(a.v) : 'pas encore de réponse'}"></div>
+  const impKey = set ? (a.imp === true ? 'forte' : a.imp || 'moyenne') : 'moyenne', impLab = IMPORTANCE.find((x) => x[0] === impKey)[1];
+  // les deux curseurs et la case sont toujours affichés (désactivés au besoin) : la mise en page ne bouge pas
+  const opts = `<div class="scale${na ? ' off' : ''}">
+    <p class="scale-now${set ? ' on' : ''}" id="ans-now" aria-live="polite">${na ? 'Sans avis' : set ? lab(a.v) : 'Touchez ou glissez'}</p>
+    <div class="scale-box">${[0, 1, 2, 3, 4].map((k) => `<i class="tk" style="--k:${k}"></i>`).join('')}<input type="range" id="ans" min="-2" max="2" step="1" value="${set ? a.v : 0}" class="${set ? '' : 'unset'}" data-unset="${set || na ? 0 : 1}" ${na ? 'disabled' : ''} aria-label="Votre position sur cette affirmation" aria-valuetext="${set ? lab(a.v) : 'pas encore de réponse'}"></div>
     <div class="scale-ends"><span>Pas du tout d'accord</span><span>Neutre</span><span>Tout à fait d'accord</span></div>
-  </div>`}
+  </div>
   <label class="noopinion"><input type="checkbox" data-na ${na ? 'checked' : ''}> Sans avis</label>`;
-  const imp = a && a.v !== null && a.v !== undefined ? (a.imp === true ? 'forte' : a.imp || 'moyenne') : null;
   return `
   <div class="topbar">
     <a class="iconbtn" href="${n > 1 ? '#/quiz/' + (n - 1) : '#/'}" aria-label="Question précédente">${ICON.back}</a>
@@ -441,7 +442,7 @@ function viewQuiz(n) {
   ${q.actualite ? `<div class="notice"><b>Dans l'actualité depuis le ${frDate(q.actualite.depuis)}.</b> ${esc(q.actualite.evenement)} <a href="${esc(q.actualite.source.url)}" target="_blank" rel="noopener noreferrer">${esc(q.actualite.source.titre)}</a><br><span class="small muted">Cette question compte dans la proximité avec les candidats, mais ne déplace pas vos pistes. Elle sera retirée quand le sujet ne fera plus l'actualité.</span></div>` : axe ? '' : '<p class="small muted" style="margin:-6px 0 12px">Cette question compte dans la proximité avec les candidats, mais ne déplace pas vos pistes : elle ne se range sur aucun des axes.</p>'}
   <div class="card affirm"><p class="eyebrow">Affirmation</p><p class="statement">« ${esc(q.enonce)} »</p><p class="context">${esc(q.contexte)}</p></div>
   <div class="opts" role="group" aria-label="Votre position">${opts}</div>
-  ${imp ? `<div class="importance"><p>Importance de ce sujet pour vous</p><div class="scale imp"><p class="scale-now on" id="imp-now" aria-live="polite">Importance ${IMPORTANCE.find((x) => x[0] === imp)[1].toLowerCase()}</p><div class="scale-box" style="--n:2">${[0, 1, 2].map((k) => `<i class="tk" style="--k:${k}"></i>`).join('')}<input type="range" id="imp" min="0" max="2" step="1" value="${IMPORTANCE.findIndex((x) => x[0] === imp)}" aria-label="Importance de ce sujet pour vous" aria-valuetext="${IMPORTANCE.find((x) => x[0] === imp)[1]}"></div><div class="scale-ends">${IMPORTANCE.map(([, t]) => `<span>${t}</span>`).join('')}</div></div></div>` : ''}
+  <div class="importance"><div class="scale imp${set ? '' : ' off'}"><p class="scale-now${set ? ' on' : ''}" id="imp-now" aria-live="polite">${set ? 'Importance : ' + impLab.toLowerCase() : 'Importance du sujet pour vous'}</p><div class="scale-box" style="--n:2">${[0, 1, 2].map((k) => `<i class="tk" style="--k:${k}"></i>`).join('')}<input type="range" id="imp" min="0" max="2" step="1" value="${IMPORTANCE.findIndex((x) => x[0] === impKey)}" class="${set ? '' : 'unset'}" ${set ? '' : 'disabled'} aria-label="Importance de ce sujet pour vous" aria-valuetext="${impLab}"></div><div class="scale-ends">${IMPORTANCE.map(([, t]) => `<span>${t}</span>`).join('')}</div></div></div>
   <div class="bottombar">
     <a class="btn" href="${nextHref}">Passer</a>
     <a class="btn primary" ${a ? `href="${nextHref}"` : 'aria-disabled="true" tabindex="-1"'}>${nextHref === '#/resultats' ? 'Mes résultats' : nextHref.startsWith('#/serie') ? 'Fin de série' : 'Suivant'}</a>
@@ -588,7 +589,7 @@ function viewMethod() {
   <li>Le programme des Écologistes n'a pas pu être lu automatiquement : les positions de Marine Tondelier viennent de la presse.</li>
   <li>${nd.length} candidats déclarés n'ont pas encore de position sourcée : ${nd.map((c) => esc(c.nom)).join(', ')}.</li></ul>
   <h2>Mises à jour</h2>
-  <p>Questions, candidats et positions sont revus régulièrement. Une veille automatisée propose des ajouts, qu'un humain relit ensuite ; la relecture est en cours et les positions pas encore relues sont publiées avec une mention explicite. Chaque version est datée.</p>
+  <p>Questions, candidats et positions sont revus régulièrement. Une veille automatisée propose des ajouts, qu'un humain relit ensuite ; toute position ajoutée ou modifiée après la dernière relecture est signalée comme non relue. Chaque version est datée.</p>
   <ul>${hist}</ul>
   <h2>Vos données</h2>
   <p>Il n'y a ni compte ni suivi. Vos réponses sont enregistrées uniquement dans le navigateur de cet appareil et ne sont envoyées nulle part. Seul un compteur global du nombre de simulations peut exister, sans aucune information sur les réponses.</p></div>`;
@@ -756,7 +757,7 @@ function commitAnswer(v) {
 }
 const SCALE_LABELS = Object.fromEntries(OPTIONS.filter((o) => o.v !== null).map((o) => [o.v, o.t]));
 document.addEventListener('input', (e) => {
-  if (e.target.matches && e.target.matches('#imp')) { const t = IMPORTANCE[e.target.value][1]; document.getElementById('imp-now').textContent = 'Importance ' + t.toLowerCase(); e.target.setAttribute('aria-valuetext', t); return; }
+  if (e.target.matches && e.target.matches('#imp')) { const t = IMPORTANCE[e.target.value][1]; document.getElementById('imp-now').textContent = 'Importance : ' + t.toLowerCase(); e.target.setAttribute('aria-valuetext', t); return; }
   if (!e.target.matches || !e.target.matches('#ans')) return;
   const n = document.getElementById('ans-now');
   e.target.classList.remove('unset'); n.textContent = SCALE_LABELS[e.target.value]; n.classList.add('on');

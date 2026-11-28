@@ -1,8 +1,18 @@
 {
- "version": "1.55",
+ "version": "1.57",
  "date": "2026-11-28",
- "statut": "Proposition en attente de validation",
+ "statut": "Positions relues par l'éditeur le 28 novembre 2026",
  "historique": [
+  {
+   "version": "1.57",
+   "date": "2026-11-28",
+   "resume": "Les deux curseurs et la case « Sans avis » sont toujours affichés, désactivés quand ils ne s'appliquent pas (importance avant la réponse, les deux curseurs si « Sans avis » est coché) : plus de ligne qui apparaît ou disparaît. Titre de l'importance fusionné avec son libellé."
+  },
+  {
+   "version": "1.56",
+   "date": "2026-11-28",
+   "resume": "Relecture humaine terminée : 138 questions et 1 195 positions validées par l'éditeur (dont 601 positions déduites du silence), sans correction ni rejet. Les mentions « en attente de validation » sont remplacées. Le détail de la relecture est dans data/relecture.json."
+  },
   {
    "version": "1.55",
    "date": "2026-11-28",

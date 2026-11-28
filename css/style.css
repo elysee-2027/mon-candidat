@@ -302,3 +302,6 @@ body.noscroll{overflow:hidden}
 .topbar .title small{font-size:12px;font-weight:500;color:var(--muted);margin-left:2px}
 
 .topinfo span{white-space:nowrap}
+.scale.off{opacity:.4}
+.scale.off .scale-now{color:var(--muted)}
+.scale-box input:disabled{cursor:default}
