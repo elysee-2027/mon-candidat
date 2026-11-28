@@ -1,8 +1,13 @@
 {
- "version": "1.49",
+ "version": "1.50",
  "date": "2026-11-27",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.50",
+   "date": "2026-11-28",
+   "resume": "Fichier CNAME (domaine personnalisé elysee-2027.win pour GitHub Pages), conservé à chaque mise à jour du dépôt public."
+  },
   {
    "version": "1.49",
    "date": "2026-11-28",
