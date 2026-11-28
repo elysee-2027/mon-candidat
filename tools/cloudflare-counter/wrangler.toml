@@ -10,7 +10,7 @@ ALLOWED_ORIGIN = "https://elysee-2027.github.io,https://elysee-2027.win,https://
 [[d1_databases]]
 binding = "DB"
 database_name = "elysee-compteur"
-database_id = "A_REMPLACER"   # fourni par « wrangler d1 create elysee-compteur »
+database_id = "26e30a1e-c89e-42b7-8a28-b2d59847b076"   # fourni par « wrangler d1 create elysee-compteur »
 
 # Limitation de débit native (facultative) : 10 envois par minute et par adresse.
 [[unsafe.bindings]]
