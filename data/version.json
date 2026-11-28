@@ -1,8 +1,18 @@
 {
- "version": "1.50",
- "date": "2026-11-27",
+ "version": "1.52",
+ "date": "2026-11-28",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.52",
+   "date": "2026-11-28",
+   "resume": "Bandeau en haut du site : date de mise à jour et nombre de visites (une visite par appareil et par jour, compteur distinct des simulations). La date de la version n'avait pas suivi les versions 1.43 à 1.51 : corrigée."
+  },
+  {
+   "version": "1.51",
+   "date": "2026-11-28",
+   "resume": "Réponse par un curseur horizontal à cinq crans (pas du tout d'accord à tout à fait d'accord) au lieu de cinq boutons ; « Sans avis » reste un bouton séparé. Le curseur n'affiche aucune valeur tant qu'on n'a pas répondu (pas de neutre par défaut). Les réponses déjà enregistrées gardent le même sens."
+  },
   {
    "version": "1.50",
    "date": "2026-11-28",

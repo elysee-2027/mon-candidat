@@ -49,7 +49,7 @@ function load() {
 function rng(seed) { let a = seed >>> 0; return () => { a = (a + 0x6d2b79f5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 function shuffled(arr, salt = 0) { const r = rng(state.seed + salt), a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { mem = state; } }
-function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0, statsConsent: state.statsConsent }; save(); resSel = null; chipSort = 'alpha'; polesOpen = false; showLines = true; markSel = null; D.questions = orderQuestions(D.baseQuestions); }
+function reset() { state = { answers: {}, counted: false, seed: (Math.random() * 2 ** 31) | 0, statsConsent: state.statsConsent, visit: state.visit }; save(); resSel = null; chipSort = 'alpha'; polesOpen = false; showLines = true; markSel = null; D.questions = orderQuestions(D.baseQuestions); }
 
 // Ordre semi-aléatoire, propre à chaque appareil. Chaque série (« tour ») contient une question par axe
 // du graphe, dans un ordre tiré au sort, plus une question hors graphe tant qu'il en reste : les axes restent
@@ -140,15 +140,29 @@ const candCount = (cid) => new Set(D.positions.filter((p) => p.candidat === cid)
 const byId = (id) => D.candidats.find((c) => c.id === id);
 
 // ---------- compteur anonyme ----------
-async function counter(method) {
-  if (!CFG.COUNTER_URL) return;
+async function counter(method, key = 'simulations') {
+  if (!CFG.COUNTER_URL) return null;
   try {
-    const r = await fetch(CFG.COUNTER_URL, { method });
+    const r = await fetch(CFG.COUNTER_URL + '?k=' + key, { method });
     const j = await r.json();
-    document.getElementById('foot-counter').textContent = `${Number(j.total).toLocaleString('fr-FR')} simulations`;
-  } catch { /* compteur facultatif */ }
+    if (j.k !== undefined ? j.k !== key : key !== 'simulations') return null; // ancien service : il ne connaît que les simulations
+    return Number(j.total);
+  } catch { return null; /* compteur facultatif */ }
 }
-function counterBump() { if (state.counted) return; state.counted = true; save(); counter('POST'); }
+const nfr = (n) => Number(n).toLocaleString('fr-FR');
+async function showSimulations(method) { const n = await counter(method); if (n !== null) document.getElementById('foot-counter').textContent = `${nfr(n)} simulations`; }
+let visits = null;
+function topInfo() {
+  const el = document.getElementById('topinfo'); if (!el || !D.version) return;
+  el.textContent = `Mis à jour le ${frDate(D.version.date)}${visits !== null ? ' · ' + nfr(visits) + (visits > 1 ? ' visites' : ' visite') : ''}`;
+}
+async function countVisit(today) { // une visite par appareil et par jour ; le service ne reçoit aucun identifiant
+  visits = await counter('GET', 'visites'); topInfo(); // le GET sert aussi à vérifier que le service connaît les visites : un ancien service compterait une simulation
+  if (visits === null || state.visit === today) return;
+  state.visit = today; save();
+  const n = await counter('POST', 'visites'); if (n !== null) { visits = n; topInfo(); }
+}
+function counterBump() { if (state.counted) return; state.counted = true; save(); showSimulations('POST'); }
 
 // ---------- statistiques anonymes (avec accord explicite) ----------
 // Rien n'est envoyé sans accord. Avec accord, le navigateur envoie seulement des incréments
@@ -404,7 +418,13 @@ function viewQuiz(n) {
   const ai = D.axes.findIndex((x) => x.id === q.axe), axe = D.axes[ai];
   const serie = seriesOf(n);
   const nx = nextTodo(n), nextHref = !nx ? '#/resultats' : seriesOf(nx) !== serie && streak >= 8 ? '#/serie/' + serie : '#/quiz/' + nx;
-  const opts = OPTIONS.map((o) => `<button class="opt${o.na ? ' na' : ''}" data-v="${o.v}" aria-pressed="${!!a && a.v === o.v}"><span class="dot"></span>${o.t}</button>`).join('');
+  const set = !!a && a.v !== null && a.v !== undefined, lab = (v) => OPTIONS.find((o) => o.v === v).t;
+  const opts = `<div class="scale">
+    <p class="scale-now${set ? ' on' : ''}" id="ans-now" aria-live="polite">${set ? lab(a.v) : 'Touchez ou glissez'}</p>
+    <div class="scale-box">${[0, 1, 2, 3, 4].map((k) => `<i class="tk" style="--k:${k}"></i>`).join('')}<input type="range" id="ans" min="-2" max="2" step="1" value="${set ? a.v : 0}" class="${set ? '' : 'unset'}" data-unset="${set ? 0 : 1}" aria-label="Votre position sur cette affirmation" aria-valuetext="${set ? lab(a.v) : 'pas encore de réponse'}"></div>
+    <div class="scale-ends"><span>Pas du tout d'accord</span><span>Neutre</span><span>Tout à fait d'accord</span></div>
+  </div>
+  <button class="opt na" data-v="null" aria-pressed="${!!a && a.v === null}"><span class="dot"></span>Sans avis</button>`;
   const imp = a && a.v !== null && a.v !== undefined ? (a.imp === true ? 'forte' : a.imp || 'moyenne') : null;
   return `
   <div class="topbar">
@@ -608,7 +628,7 @@ function viewLegal() {
     <li><b>Cookies et traceurs :</b> aucun. Ni mesure d'audience nominative, ni publicité, ni réseau social intégré. Les polices de caractères sont hébergées sur le site lui-même.</li>
     <li><b>Statistiques anonymes${CFG.STATS_URL ? '' : ' (non activées)'} :</b> uniquement si vous cochez la case prévue (désactivée par défaut, modifiable à tout moment ci-dessous). Le navigateur envoie alors, pour chaque question répondue, un simple incrément « question, réponse » : ni identifiant, ni ensemble de vos réponses, ni score de proximité avec les candidats. Une réponse sur quatre environ est remplacée au hasard avant l'envoi, si bien qu'aucune réponse reçue ne peut être tenue pour certaine, et qu'aucune n'est rattachée à une personne : le service ne conserve aucun identifiant qui permettrait de regrouper les réponses d'un même utilisateur. Ces totaux servent uniquement à améliorer les questions (questions incomprises, souvent passées, peu discriminantes) ; ils ne sont jamais publiés ni communiqués, et ne constituent pas un sondage.${consentBlock('legal')}</li>
     <li><b>Adresses IP :</b> le service qui reçoit les statistiques et les messages ne les enregistre pas et ne tient aucun journal de requêtes. Les requêtes transitent par Cloudflare, qui assure la liaison sécurisée avec le serveur de l'éditeur et voit donc l'adresse du visiteur le temps du transit, selon sa propre politique de confidentialité. Pour limiter les abus (envois en rafale), une empreinte salée de l'adresse est gardée en mémoire vive quelques minutes, jamais écrite sur disque, avec un sel renouvelé chaque jour.</li>
-    <li><b>Compteur de simulations${CFG.COUNTER_URL ? '' : ' (non activé)'} :</b> ${CFG.COUNTER_URL ? 'il n\'enregistre qu\'un nombre total, sans aucune réponse ni identifiant. La requête transite par Cloudflare, qui voit, comme tout hébergeur, l\'adresse IP de passage dans ses journaux techniques ; l\'outil ne la stocke pas.' : 's\'il est activé, il n\'enregistre qu\'un nombre total, sans aucune réponse ni identifiant.'}</li>
+    <li><b>Compteurs de simulations et de visites${CFG.COUNTER_URL ? '' : ' (non activés)'} :</b> ${CFG.COUNTER_URL ? 'ils n\'enregistrent que des nombres totaux, sans aucune réponse ni identifiant. Une visite est comptée au plus une fois par jour et par appareil, grâce à un marqueur (la date) conservé dans votre navigateur. Les requêtes transitent par Cloudflare, qui voit, comme tout hébergeur, l\'adresse IP de passage dans ses journaux techniques ; l\'outil ne la stocke pas.' : 's\'ils sont activés, ils n\'enregistrent que des nombres totaux, sans aucune réponse ni identifiant.'}</li>
     <li><b>Signalements :</b> ${CFG.CONTACT_URL ? '' : CFG.ISSUES_URL ? 'les signalements passent par les tickets publics GitHub : le texte est public et associé à votre compte GitHub (compte gratuit nécessaire). Ne mettez aucune donnée personnelle dans le texte. GitHub traite vos données selon sa propre politique de confidentialité ; le site lui-même ne reçoit rien. ' : 'aucun canal de contact n\'est activé pour le moment. '}</li>
     ${CFG.CONTACT_EMAIL ? `<li><b>Courriel :</b> si vous écrivez à l'adresse indiquée sur la page Contact, votre message et votre adresse sont reçus et conservés par le fournisseur de messagerie de l'éditeur, uniquement pour traiter votre demande, et supprimés une fois celle-ci traitée.</li>` : ''}
     ${CFG.CONTACT_URL ? `<li><b>Formulaire de contact :</b> le message, l'objet et, si vous la donnez, votre adresse électronique sont transmis au serveur de l'éditeur${CFG.CONTACT_SERVICE ? ' (' + esc(CFG.CONTACT_SERVICE) + ')' : ''}, uniquement pour traiter votre demande. Ils sont conservés au plus douze mois puis supprimés automatiquement. L'adresse électronique est facultative : sans elle, aucune réponse ne peut vous être apportée.</li>` : ''}
@@ -709,11 +729,7 @@ document.addEventListener('click', (e) => {
   if (mk) { e.preventDefault(); const [i, who] = mk.dataset.mark.split('|'); markSel = mk.dataset.mark === 'close' || (markSel && markSel.i === +i && markSel.who === who) ? null : { i: +i, who }; rerender(viewResults); return; }
   const t = e.target.closest('[data-v],[data-imp],[data-sel],[data-act]'); if (!t) return;
   if (t.dataset.v !== undefined) {
-    const q = D.questions[quizN() - 1], prev = state.answers[q.id];
-    const v = t.dataset.v === 'null' ? null : Number(t.dataset.v);
-    if (!prev) streak++;
-    state.answers[q.id] = { v, imp: v === null ? 'moyenne' : (prev && prev.imp) || 'moyenne' }; save();
-    rerender(() => viewQuiz(quizN()));
+    commitAnswer(t.dataset.v === 'null' ? null : Number(t.dataset.v));
   } else if (t.dataset.imp) {
     const q = D.questions[quizN() - 1]; state.answers[q.id].imp = t.dataset.imp; save();
     rerender(() => viewQuiz(quizN()));
@@ -729,7 +745,30 @@ document.addEventListener('click', (e) => {
     if (confirm('Effacer toutes vos réponses sur cet appareil ?')) { reset(); location.hash = '#/'; route(); }
   }
 });
+function commitAnswer(v) {
+  const q = D.questions[quizN() - 1], prev = state.answers[q.id];
+  if (!prev) streak++;
+  state.answers[q.id] = { v, imp: v === null ? 'moyenne' : (prev && prev.imp) || 'moyenne' }; save();
+  const kb = document.activeElement && document.activeElement.id === 'ans';
+  rerender(() => viewQuiz(quizN()));
+  if (kb) { const el = document.getElementById('ans'); if (el) el.focus({ preventScroll: true }); }
+}
+const SCALE_LABELS = Object.fromEntries(OPTIONS.filter((o) => o.v !== null).map((o) => [o.v, o.t]));
+document.addEventListener('input', (e) => {
+  if (!e.target.matches || !e.target.matches('#ans')) return;
+  const n = document.getElementById('ans-now');
+  e.target.classList.remove('unset'); n.textContent = SCALE_LABELS[e.target.value]; n.classList.add('on');
+  e.target.setAttribute('aria-valuetext', SCALE_LABELS[e.target.value]);
+});
+document.addEventListener('pointerup', (e) => { // toucher au centre d'une échelle vierge : aucun évènement « change » (la valeur ne bouge pas)
+  const el = e.target.matches && e.target.matches('#ans') ? e.target : null;
+  if (el && el.dataset.unset === '1' && el.value === '0') commitAnswer(0);
+});
+document.addEventListener('keydown', (e) => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('#ans[data-unset="1"]')) { e.preventDefault(); commitAnswer(Number(e.target.value)); }
+});
 document.addEventListener('change', (e) => {
+  if (e.target.matches('#ans')) { commitAnswer(Number(e.target.value)); return; }
   if (e.target.matches('[data-lines]')) { showLines = e.target.checked; rerender(viewResults); return; }
   if (!e.target.matches('[data-consent]')) return;
   state.statsConsent = e.target.checked; save();
@@ -752,7 +791,9 @@ window.addEventListener('hashchange', route);
   D.baseQuestions = D.questions;
   D.questions = orderQuestions(D.baseQuestions);
   document.getElementById('foot-version').textContent = `Version ${D.version.version} · ${frDate(D.version.date)}`;
-  counter('GET');
+  topInfo();
+  showSimulations('GET');
+  countVisit(today);
   ready = true;
   route();
 })();
