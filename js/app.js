@@ -144,9 +144,11 @@ async function counter(method, key = 'simulations') {
   if (!CFG.COUNTER_URL) return null;
   try {
     const r = await fetch(CFG.COUNTER_URL + '?k=' + key, { method });
+    if (!r.ok) return null; // refus (origine, débit) ou panne : la réponse n'a pas de total
     const j = await r.json();
     if (j.k !== undefined ? j.k !== key : key !== 'simulations') return null; // ancien service : il ne connaît que les simulations
-    return Number(j.total);
+    const n = Number(j.total);
+    return Number.isFinite(n) ? n : null;
   } catch { return null; /* compteur facultatif */ }
 }
 const nfr = (n) => Number(n).toLocaleString('fr-FR');
@@ -165,7 +167,18 @@ async function countVisit(today) { // une visite par appareil et par jour ; le s
   state.visit = today; save();
   const n = await counter('POST', 'visites'); if (n !== null) { visits = n; topInfo(); }
 }
-function counterBump() { if (state.counted) return; state.counted = true; save(); showSimulations('POST'); }
+// Une simulation par parcours (« Recommencer » en ouvre un nouveau). Le marqueur garde l'adresse du service qui l'a comptée
+// et n'est posé qu'après un envoi accepté : un graphe vu sans compteur actif, ou un envoi refusé, sera compté au prochain affichage.
+// Les anciens marqueurs (true) sont recomptés une fois.
+let bumping = false;
+async function counterBump() {
+  if (!CFG.COUNTER_URL || state.counted === CFG.COUNTER_URL || bumping) return;
+  bumping = true;
+  const n = await counter('POST');
+  bumping = false;
+  if (n === null) return;
+  state.counted = CFG.COUNTER_URL; save(); sims = n; topInfo();
+}
 
 // ---------- statistiques anonymes (avec accord explicite) ----------
 // Rien n'est envoyé sans accord. Avec accord, le navigateur envoie seulement des incréments
@@ -411,7 +424,7 @@ function viewHome() {
   </div>
   <a class="link-under" href="#/methode">Méthodologie et sources</a>
   <a class="link-under" href="#/avertissement" style="margin-top:8px">Avertissement : ce n'est pas une consigne de vote</a>
-  <div class="banner" style="margin-top:20px">Les positions des candidats sont extraites de leurs textes et déclarations publiés, puis relues par l'éditeur (28 novembre 2026). Une erreur reste possible : signalez-la depuis la page Contact.</div>`;
+  <div class="banner" style="margin-top:20px">Les positions des candidats sont extraites de leurs textes et déclarations publiés. Une erreur reste possible : signalez-la depuis la page Contact.</div>`;
 }
 
 function viewQuiz(n) {

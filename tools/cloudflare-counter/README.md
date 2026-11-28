@@ -51,5 +51,5 @@ npx wrangler d1 execute elysee-compteur --remote --command "UPDATE counter SET n
 
 ## Limites
 
-- Le nombre compte des graphes affichés (une fois par appareil), pas des personnes distinctes ; la limite de débit (10/min/adresse) n'empêche pas un script de gonfler le chiffre. Ne le présentez pas comme un nombre d'utilisateurs.
+- Le nombre compte des parcours arrivés jusqu'au graphe (une fois par navigateur et par parcours, « Recommencer » en ouvrant un nouveau), pas des personnes distinctes ; la limite de débit (10/min/adresse) n'empêche pas un script de gonfler le chiffre. Ne le présentez pas comme un nombre d'utilisateurs.
 - Cloudflare traite les requêtes (adresse IP incluse, dans ses journaux) : à mentionner dans les mentions légales comme pour tout hébergeur.

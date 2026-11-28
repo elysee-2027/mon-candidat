@@ -1,8 +1,13 @@
 {
- "version": "1.57",
+ "version": "1.58",
  "date": "2026-11-28",
  "statut": "Positions relues par l'éditeur le 28 novembre 2026",
  "historique": [
+  {
+   "version": "1.58",
+   "date": "2026-11-28",
+   "resume": "Compteur de simulations : un appareil qui avait vu le graphe avant l'activation du compteur, ou dont l'envoi avait échoué, n'était plus jamais compté. Le marqueur n'est désormais posé qu'après un envoi accepté et retient le service qui a compté ; les anciens marqueurs sont recomptés une fois. Un refus du service n'affiche plus « NaN »."
+  },
   {
    "version": "1.57",
    "date": "2026-11-28",
