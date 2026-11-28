@@ -1,0 +1,4281 @@
+{
+ "version": 1,
+ "exporte_le": "2026-11-28",
+ "questions": {
+  "q01": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q03": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "bouamrane": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q05": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q07": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "becht": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q09": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    },
+    "labib": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q11": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q14": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "platret": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q16": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "egger": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "markovic": {
+     "statut": "valide"
+    },
+    "polony": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q02": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "arthaud": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "riner": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q04": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q06": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "markovic": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q08": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q10": {
+   "question": "ok",
+   "positions": {
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "labib": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q12": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q13": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q15": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q17": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q19": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    },
+    "labib": {
+     "statut": "valide"
+    },
+    "riner": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q21": {
+   "question": "ok",
+   "positions": {
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q23": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q25": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "arthaud": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    },
+    "labib": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q27": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q29": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "labib": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q31": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "egger": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q18": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q20": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q22": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q24": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q26": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q28": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q30": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q32": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q33": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q36": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q39": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "batho": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "markovic": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q44": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q45": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q48": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q51": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "bouamrane": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q53": {
+   "question": "ok",
+   "positions": {
+    "lisnard": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "becht": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q34": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "polony": {
+     "statut": "valide"
+    },
+    "arthaud": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q37": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q40": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q43": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "platret": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q46": {
+   "question": "ok",
+   "positions": {
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q49": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q56": {
+   "question": "ok",
+   "positions": {
+    "attal": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q54": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q35": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q38": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "platret": {
+     "statut": "valide"
+    },
+    "arthaud": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    },
+    "labib": {
+     "statut": "valide"
+    },
+    "riner": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q41": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q42": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q47": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q50": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q52": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q55": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q57": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q60": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q63": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q66": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q69": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q72": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q75": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q78": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q58": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q61": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "arthaud": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q64": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q67": {
+   "question": "ok",
+   "positions": {
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q127": {
+   "question": "ok",
+   "positions": {
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q70": {
+   "question": "ok",
+   "positions": {
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q73": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q76": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "markovic": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q79": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "markovic": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q59": {
+   "question": "ok",
+   "positions": {
+    "philippe": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q62": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q65": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q68": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q71": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q74": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q77": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q80": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q81": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "polony": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q84": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q87": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "batho": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q90": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q92": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q95": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q98": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q100": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q82": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q85": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q88": {
+   "question": "ok",
+   "positions": {
+    "melenchon": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q91": {
+   "question": "ok",
+   "positions": {
+    "attal": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q93": {
+   "question": "ok",
+   "positions": {
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q96": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q99": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "platret": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    },
+    "labib": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q101": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q83": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q86": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q89": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q94": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q97": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q102": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q103": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q104": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    },
+    "labib": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q105": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q106": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "batho": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q107": {
+   "question": "ok",
+   "positions": {
+    "roussel": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q108": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q109": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q110": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q111": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q112": {
+   "question": "ok",
+   "positions": {
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q113": {
+   "question": "ok",
+   "positions": {
+    "attal": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q114": {
+   "question": "ok",
+   "positions": {
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q115": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q116": {
+   "question": "ok",
+   "positions": {
+    "kazib": {
+     "statut": "valide"
+    },
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q117": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q118": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "markovic": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q119": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "zemmour": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q120": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q121": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q122": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q123": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q124": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q125": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q126": {
+   "question": "ok",
+   "positions": {
+    "philippe": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "lepen": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q128": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q129": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "egger": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q130": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q131": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q132": {
+   "question": "ok",
+   "positions": {
+    "zemmour": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q133": {
+   "question": "ok",
+   "positions": {
+    "roussel": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q134": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "tondelier": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q135": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q136": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "nda": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q137": {
+   "question": "ok",
+   "positions": {
+    "mikolajczak": {
+     "statut": "valide"
+    },
+    "retailleau": {
+     "statut": "valide"
+    },
+    "philippe": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "philippot": {
+     "statut": "valide"
+    },
+    "attal": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    },
+    "glucksmann": {
+     "statut": "valide"
+    }
+   }
+  },
+  "q138": {
+   "question": "ok",
+   "positions": {
+    "retailleau": {
+     "statut": "valide"
+    },
+    "lisnard": {
+     "statut": "valide"
+    },
+    "roussel": {
+     "statut": "valide"
+    },
+    "melenchon": {
+     "statut": "valide"
+    },
+    "branco": {
+     "statut": "valide"
+    }
+   }
+  }
+ }
+}

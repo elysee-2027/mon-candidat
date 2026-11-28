@@ -150,11 +150,14 @@ async function counter(method, key = 'simulations') {
   } catch { return null; /* compteur facultatif */ }
 }
 const nfr = (n) => Number(n).toLocaleString('fr-FR');
-async function showSimulations(method) { const n = await counter(method); if (n !== null) document.getElementById('foot-counter').textContent = `${nfr(n)} simulations`; }
-let visits = null;
+let visits = null, sims = null;
+async function showSimulations(method) { const n = await counter(method); if (n !== null) { sims = n; topInfo(); } }
 function topInfo() {
   const el = document.getElementById('topinfo'); if (!el || !D.version) return;
-  el.textContent = `Mis à jour le ${frDate(D.version.date)}${visits !== null ? ' · ' + nfr(visits) + (visits > 1 ? ' visites' : ' visite') : ''}`;
+  const parts = [`Site mis à jour le ${frDate(D.version.date)}`];
+  if (visits !== null) parts.push(`${nfr(visits)} ${visits > 1 ? 'visites' : 'visite'}`);
+  if (sims !== null) parts.push(`${nfr(sims)} ${sims > 1 ? 'simulations' : 'simulation'}`);
+  el.innerHTML = parts.map((t) => `<span>${t}</span>`).join('');
 }
 async function countVisit(today) { // une visite par appareil et par jour ; le service ne reçoit aucun identifiant
   visits = await counter('GET', 'visites'); topInfo(); // le GET sert aussi à vérifier que le service connaît les visites : un ancien service compterait une simulation
@@ -802,7 +805,7 @@ window.addEventListener('hashchange', route);
   D.questions = D.questions.filter((q) => !q.actualite || q.actualite.jusqu_au >= today); // questions d'actualité échues : retirées
   D.baseQuestions = D.questions;
   D.questions = orderQuestions(D.baseQuestions);
-  document.getElementById('foot-version').textContent = `Version ${D.version.version} · ${frDate(D.version.date)}`;
+  document.getElementById('foot-version').textContent = `Version ${D.version.version}`;
   topInfo();
   showSimulations('GET');
   countVisit(today);

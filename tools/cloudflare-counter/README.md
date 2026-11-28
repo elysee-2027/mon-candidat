@@ -1,6 +1,6 @@
 # Compteur global sans serveur (Cloudflare Worker + D1)
 
-Le Worker est servi sur `api.elysee-2027.win` (domaine géré par Cloudflare), sans adresse `*.workers.dev`, donc sans sous-domaine de compte visible. Il ne fait qu'une chose : compter les simulations (`GET /counter` → `{"total": n}`, `POST /counter` → +1). Aucune réponse, aucun identifiant, aucune adresse IP stockée. L'incrément est atomique (une seule requête SQL), contrairement à KV.
+Le Worker est servi sur `api.elysee-2027.win` (domaine géré par Cloudflare), sans adresse `*.workers.dev`, donc sans sous-domaine de compte visible. Il ne fait qu'une chose : compter les simulations et les visites (`GET /counter?k=simulations|visites` → `{"total": n, "k": …}`, `POST` → +1). Aucune réponse, aucun identifiant, aucune adresse IP stockée. L'incrément est atomique (une seule requête SQL), contrairement à KV.
 
 Si le site est servi sur un autre domaine que ceux de `ALLOWED_ORIGIN`, ajoutez-le dans `wrangler.toml`.
 
@@ -41,7 +41,7 @@ Dans `js/config.js` :
 COUNTER_URL: 'https://api.elysee-2027.win/counter',
 ```
 
-puis republier. Le pied de page affiche « N simulations ».
+puis republier. Le bandeau en haut du site affiche la date de mise à jour, le nombre de visites et le nombre de simulations.
 
 ## Remettre à zéro (tests avant lancement)
 

@@ -1,8 +1,13 @@
 {
- "version": "1.54",
+ "version": "1.55",
  "date": "2026-11-28",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.55",
+   "date": "2026-11-28",
+   "resume": "Bandeau « Site mis à jour le … · N visites · N simulations » visible en haut de toutes les pages, y compris pendant le questionnaire et les résultats. La date et le compteur ne sont plus répétés en pied de page (qui garde le numéro de version)."
+  },
   {
    "version": "1.54",
    "date": "2026-11-28",

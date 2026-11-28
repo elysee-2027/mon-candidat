@@ -43,8 +43,7 @@ p{margin:0 0 1em}
 .nav a:hover,.nav a[aria-current=page]{color:var(--txt)}
 .nav a.info{width:34px;height:34px;padding:0;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--trait);border-radius:50%;font-weight:600;color:var(--txt)}
 body.focus .bar{display:none}
-.topinfo{padding:6px var(--pad);text-align:center;font-size:12px;line-height:16px;color:var(--muted);border-bottom:1px solid var(--trait)}
-body.focus .topinfo{display:none}
+.topinfo{display:flex;flex-wrap:wrap;justify-content:center;gap:0 14px;padding:6px var(--pad);text-align:center;font-size:12px;line-height:16px;color:var(--muted);border-bottom:1px solid var(--trait)}
 
 main{flex:1;width:100%;max-width:720px;margin:0 auto;padding:12px var(--pad) 32px;outline:none}
 .foot{display:flex;flex-wrap:wrap;gap:4px 16px;justify-content:center;padding:14px var(--pad);
@@ -301,3 +300,5 @@ th{color:var(--muted);font-weight:500;background:var(--surface)}
 body.noscroll{overflow:hidden}
 
 .topbar .title small{font-size:12px;font-weight:500;color:var(--muted);margin-left:2px}
+
+.topinfo span{white-space:nowrap}
