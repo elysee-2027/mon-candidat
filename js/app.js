@@ -419,12 +419,13 @@ function viewQuiz(n) {
   const serie = seriesOf(n);
   const nx = nextTodo(n), nextHref = !nx ? '#/resultats' : seriesOf(nx) !== serie && streak >= 8 ? '#/serie/' + serie : '#/quiz/' + nx;
   const set = !!a && a.v !== null && a.v !== undefined, lab = (v) => OPTIONS.find((o) => o.v === v).t;
-  const opts = `<div class="scale">
+  const na = !!a && a.v === null;
+  const opts = `${na ? '' : `<div class="scale">
     <p class="scale-now${set ? ' on' : ''}" id="ans-now" aria-live="polite">${set ? lab(a.v) : 'Touchez ou glissez'}</p>
     <div class="scale-box">${[0, 1, 2, 3, 4].map((k) => `<i class="tk" style="--k:${k}"></i>`).join('')}<input type="range" id="ans" min="-2" max="2" step="1" value="${set ? a.v : 0}" class="${set ? '' : 'unset'}" data-unset="${set ? 0 : 1}" aria-label="Votre position sur cette affirmation" aria-valuetext="${set ? lab(a.v) : 'pas encore de réponse'}"></div>
     <div class="scale-ends"><span>Pas du tout d'accord</span><span>Neutre</span><span>Tout à fait d'accord</span></div>
-  </div>
-  <button class="opt na" data-v="null" aria-pressed="${!!a && a.v === null}"><span class="dot"></span>Sans avis</button>`;
+  </div>`}
+  <label class="noopinion"><input type="checkbox" data-na ${na ? 'checked' : ''}> Sans avis</label>`;
   const imp = a && a.v !== null && a.v !== undefined ? (a.imp === true ? 'forte' : a.imp || 'moyenne') : null;
   return `
   <div class="topbar">
@@ -437,7 +438,7 @@ function viewQuiz(n) {
   ${q.actualite ? `<div class="notice"><b>Dans l'actualité depuis le ${frDate(q.actualite.depuis)}.</b> ${esc(q.actualite.evenement)} <a href="${esc(q.actualite.source.url)}" target="_blank" rel="noopener noreferrer">${esc(q.actualite.source.titre)}</a><br><span class="small muted">Cette question compte dans la proximité avec les candidats, mais ne déplace pas vos pistes. Elle sera retirée quand le sujet ne fera plus l'actualité.</span></div>` : axe ? '' : '<p class="small muted" style="margin:-6px 0 12px">Cette question compte dans la proximité avec les candidats, mais ne déplace pas vos pistes : elle ne se range sur aucun des axes.</p>'}
   <div class="card affirm"><p class="eyebrow">Affirmation</p><p class="statement">« ${esc(q.enonce)} »</p><p class="context">${esc(q.contexte)}</p></div>
   <div class="opts" role="group" aria-label="Votre position">${opts}</div>
-  ${imp ? `<div class="importance"><p>Importance de ce sujet pour vous</p><div class="seg" role="group" aria-label="Importance">${IMPORTANCE.map(([k, t]) => `<button data-imp="${k}" aria-pressed="${imp === k}">${t}</button>`).join('')}</div></div>` : ''}
+  ${imp ? `<div class="importance"><p>Importance de ce sujet pour vous</p><div class="scale imp"><p class="scale-now on" id="imp-now" aria-live="polite">Importance ${IMPORTANCE.find((x) => x[0] === imp)[1].toLowerCase()}</p><div class="scale-box" style="--n:2">${[0, 1, 2].map((k) => `<i class="tk" style="--k:${k}"></i>`).join('')}<input type="range" id="imp" min="0" max="2" step="1" value="${IMPORTANCE.findIndex((x) => x[0] === imp)}" aria-label="Importance de ce sujet pour vous" aria-valuetext="${IMPORTANCE.find((x) => x[0] === imp)[1]}"></div><div class="scale-ends">${IMPORTANCE.map(([, t]) => `<span>${t}</span>`).join('')}</div></div></div>` : ''}
   <div class="bottombar">
     <a class="btn" href="${nextHref}">Passer</a>
     <a class="btn primary" ${a ? `href="${nextHref}"` : 'aria-disabled="true" tabindex="-1"'}>${nextHref === '#/resultats' ? 'Mes résultats' : nextHref.startsWith('#/serie') ? 'Fin de série' : 'Suivant'}</a>
@@ -730,9 +731,6 @@ document.addEventListener('click', (e) => {
   const t = e.target.closest('[data-v],[data-imp],[data-sel],[data-act]'); if (!t) return;
   if (t.dataset.v !== undefined) {
     commitAnswer(t.dataset.v === 'null' ? null : Number(t.dataset.v));
-  } else if (t.dataset.imp) {
-    const q = D.questions[quizN() - 1]; state.answers[q.id].imp = t.dataset.imp; save();
-    rerender(() => viewQuiz(quizN()));
   } else if (t.dataset.sel) {
     const id = t.dataset.sel, i = resSel.indexOf(id);
     if (i >= 0) resSel.splice(i, 1); else { if (resSel.length >= MAX_SEL) resSel.shift(); resSel.push(id); }
@@ -755,6 +753,7 @@ function commitAnswer(v) {
 }
 const SCALE_LABELS = Object.fromEntries(OPTIONS.filter((o) => o.v !== null).map((o) => [o.v, o.t]));
 document.addEventListener('input', (e) => {
+  if (e.target.matches && e.target.matches('#imp')) { const t = IMPORTANCE[e.target.value][1]; document.getElementById('imp-now').textContent = 'Importance ' + t.toLowerCase(); e.target.setAttribute('aria-valuetext', t); return; }
   if (!e.target.matches || !e.target.matches('#ans')) return;
   const n = document.getElementById('ans-now');
   e.target.classList.remove('unset'); n.textContent = SCALE_LABELS[e.target.value]; n.classList.add('on');
@@ -768,7 +767,20 @@ document.addEventListener('keydown', (e) => {
   if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('#ans[data-unset="1"]')) { e.preventDefault(); commitAnswer(Number(e.target.value)); }
 });
 document.addEventListener('change', (e) => {
+  if (e.target.matches('[data-na]')) {
+    const q = D.questions[quizN() - 1];
+    if (e.target.checked) commitAnswer(null);
+    else { delete state.answers[q.id]; if (streak > 0) streak--; save(); rerender(() => viewQuiz(quizN())); }
+    const el = document.querySelector('[data-na]'); if (el) el.focus({ preventScroll: true });
+    return;
+  }
   if (e.target.matches('#ans')) { commitAnswer(Number(e.target.value)); return; }
+  if (e.target.matches('#imp')) {
+    const q = D.questions[quizN() - 1]; if (!state.answers[q.id]) return;
+    state.answers[q.id].imp = IMPORTANCE[e.target.value][0]; save();
+    rerender(() => viewQuiz(quizN())); const el = document.getElementById('imp'); if (el) el.focus({ preventScroll: true });
+    return;
+  }
   if (e.target.matches('[data-lines]')) { showLines = e.target.checked; rerender(viewResults); return; }
   if (!e.target.matches('[data-consent]')) return;
   state.statsConsent = e.target.checked; save();

@@ -1,8 +1,18 @@
 {
- "version": "1.52",
+ "version": "1.54",
  "date": "2026-11-28",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.54",
+   "date": "2026-11-28",
+   "resume": "« Sans avis » devient une case à cocher centrée, sans cadre ; la cocher masque les deux curseurs. La décocher efface la réponse."
+  },
+  {
+   "version": "1.53",
+   "date": "2026-11-28",
+   "resume": "L'importance du sujet se règle aussi avec un curseur à trois crans (faible, moyenne, forte), au lieu de trois boutons. Valeur par défaut inchangée (moyenne) ; les pondérations du calcul ne changent pas."
+  },
   {
    "version": "1.52",
    "date": "2026-11-28",
