@@ -20,7 +20,7 @@ def fetch(u):
     if head.startswith(b'%PDF'):
         t=subprocess.run(["pdftotext","-layout",raw,"-"],capture_output=True).stdout.decode('utf-8','replace')
     else:
-        t=subprocess.run([sys.executable,"-I","bin/txt.py",raw],capture_output=True).stdout.decode('utf-8','replace')
+        t=subprocess.run([sys.executable,"-I",os.path.join(os.path.dirname(os.path.abspath(__file__)),"txt.py"),raw],capture_output=True).stdout.decode('utf-8','replace')
     open(txt,'w').write("URL: "+u+"\n"+t)
     return len(t)
 from concurrent.futures import ThreadPoolExecutor

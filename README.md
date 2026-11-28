@@ -27,14 +27,18 @@ Règles de pondération des sources : `programme` > `candidat` > `proche`.
 
 1. Une veille (manuelle ou par IA) propose des ajouts : nouvelles déclarations, programmes, candidats.
 2. `tools/crawl.py` télécharge les pages d'un programme dans `corpus/<candidat>/` ; `tools/c.py` recherche des passages ; `tools/gen.py` vérifie chaque citation mot pour mot dans le corpus avant d'écrire `positions.json`.
-3. Un humain relit les propositions avec `tools/relecture.html`, puis `tools/apply_relecture.py` passe leur `statut` de `propose` à `valide` (voir « Relecture des positions »).
+3. Un humain relit les propositions avec `tools/relecture.html`, puis `tools/apply_relecture.py` passe leur `statut` de `propose` à `valide` (voir « Relecture des positions »). Le fichier de relecture appliqué est conservé dans `data/relecture.json`.
 4. Incrémenter `data/version.json` (version, date, historique) : modifier les questions change la comparabilité des résultats. Puis lancer `python3 tools/set_asset_version.py` : GitHub Pages garde js/ et css/ en cache 10 minutes, ce script force le rechargement.
 
 Le dossier `corpus/` n'est pas versionné.
 
-## Compteur de simulations
+## Compteurs
 
-`js/config.js` : renseigner `COUNTER_URL` avec un service qui répond `{"total": n}` en GET et incrémente en POST. Vide, le compteur est masqué. Aucune réponse n'est transmise.
+`js/config.js` : renseigner `COUNTER_URL` avec un service qui répond `{"total": n, "k": clé}` en GET (`?k=simulations` ou `?k=visites`) et incrémente en POST. Vide, les compteurs sont masqués. Ils s'affichent dans le bandeau du haut avec la date de mise à jour. Aucune réponse n'est transmise. Une implémentation prête à déployer (Cloudflare Worker + D1) est dans `tools/cloudflare-counter/`.
+
+## Interface de réponse
+
+Chaque affirmation se règle avec un curseur horizontal à cinq crans, sans valeur de départ ; l'importance du sujet avec un curseur à trois crans ; « Sans avis » est une case à cocher qui grise les deux curseurs. Les trois commandes restent toujours affichées pour que la mise en page ne bouge pas.
 
 ## Questions d'actualité
 
