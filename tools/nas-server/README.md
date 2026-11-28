@@ -12,7 +12,7 @@ L'adresse IP de votre domicile n'est jamais exposée : le NAS n'ouvre aucun port
 
 ## Ce que le service conserve, et ne conserve pas
 
-- **Conservé :** compteurs (question × réponse, série atteinte, envois par jour) ; messages du formulaire, supprimés automatiquement après `RETENTION_DAYS` jours (365 par défaut).
+- **Conservé :** compteurs (question × réponse, série atteinte, envois par jour, nombre total de simulations) ; messages du formulaire, supprimés automatiquement après `RETENTION_DAYS` jours (365 par défaut).
 - **Jamais conservé :** adresses IP, identifiants, en-têtes, journaux de requêtes. Le conteneur `api` n'écrit aucun journal (`logging: none`), le système de fichiers est en lecture seule hors `./data`.
 - **Limitation des abus :** une empreinte salée de l'adresse est gardée en mémoire vive (jamais sur disque), vidée toutes les heures, sel renouvelé chaque jour.
 - **Réponses brouillées :** le navigateur remplace au hasard une partie des réponses (`STATS_P`, 25 % par défaut) ; le tableau de bord redresse les totaux.
@@ -36,7 +36,7 @@ Cloudflare voit les requêtes en transit (comme tout intermédiaire). Ne pas act
 4. **Tunnel Cloudflare.** Dans le tableau de bord Cloudflare : *Zero Trust > Réseaux > Tunnels > Créer un tunnel > Cloudflared*. Choisissez l'installation **Docker**, copiez uniquement le **jeton** (la longue chaîne après `--token`) dans `TUNNEL_TOKEN` du fichier `.env`. Dans l'onglet *Nom d'hôte public* du tunnel, ajoutez `api.votre-domaine` → type **HTTP**, URL **`api:8080`**.
 5. **Démarrage.** Dans Container Manager : *Projet > Créer* ; nom `elysee2027`, chemin `docker/elysee2027`, source « utiliser le fichier docker-compose.yml existant ». Cochez le démarrage. Les deux conteneurs `api` et `tunnel` doivent passer à l'état « en cours d'exécution » (l'API « sain »).
 6. **Vérification.** Depuis n'importe quel navigateur : `https://api.votre-domaine/health` doit afficher `ok`.
-7. **Site.** Dans la copie du site (`js/config.js`), renseignez `STATS_URL: 'https://api.votre-domaine'` et `CONTACT_URL: 'https://api.votre-domaine/contact'`, puis republiez. Le script `tools/make-clean-copy.sh` le fait pour vous.
+7. **Site.** Dans la copie du site (`js/config.js`), renseignez `STATS_URL: 'https://api.votre-domaine'`, `CONTACT_URL: 'https://api.votre-domaine/contact'` et, pour le compteur global de simulations affiché en pied de page, `COUNTER_URL: 'https://api.votre-domaine/counter'`, puis republiez. Le script `tools/make-clean-copy.sh` le fait pour vous.
 
 ## Règles de sécurité à appliquer sur Cloudflare
 
@@ -73,3 +73,7 @@ node --disable-warning=ExperimentalWarning tools/nas-server/test.mjs
 ```
 
 Les tests couvrent la validation, la limitation des abus, l'absence d'adresse IP dans la base, la suppression automatique des messages, l'administration protégée par jeton et l'exactitude du redressement. L'image Docker elle-même n'a pas pu être construite dans l'environnement de développement (pas de démon Docker) : le premier démarrage sur le NAS est le premier test réel du conteneur.
+
+## Compteur global de simulations
+
+`GET /counter` renvoie `{"total": n}` ; `POST /counter` ajoute 1 puis renvoie le même format. Le site n'envoie le POST qu'une fois par simulation (la première fois que le graphe est affiché sur un appareil) et affiche le total en pied de page. Limite : 10 envois par heure et par adresse (empreinte salée en mémoire, jamais écrite). Le total est un simple nombre : aucune réponse ni identifiant. Il compte les graphes affichés, pas des personnes distinctes ; ne le présentez pas comme un nombre d'utilisateurs.

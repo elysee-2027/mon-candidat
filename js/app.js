@@ -409,10 +409,10 @@ function viewQuiz(n) {
   return `
   <div class="topbar">
     <a class="iconbtn" href="${n > 1 ? '#/quiz/' + (n - 1) : '#/'}" aria-label="Question précédente">${ICON.back}</a>
-    <span class="title">Question ${n} / ${tot}</span>
+    <span class="title" aria-live="polite">${countAnswered()} / ${tot} <small>réponses</small></span>
     <a class="textbtn" href="#/">Quitter</a>
   </div>
-  <div class="track-progress" role="progressbar" aria-valuemin="0" aria-valuemax="${tot}" aria-valuenow="${n}" aria-label="Progression"><i style="width:${((n - 1) / tot) * 100}%"></i></div>
+  <div class="track-progress" role="progressbar" aria-valuemin="0" aria-valuemax="${tot}" aria-valuenow="${countAnswered()}" aria-label="Réponses données"><i style="width:${(countAnswered() / tot) * 100}%"></i></div>
   <div class="theme">${miniRadar(ai)}<div><p class="eyebrow">${axe ? `Thème ${ai + 1} sur ${D.axes.length}` : q.actualite ? 'Actualité' : 'Hors graphe'} · série ${serie}/${nbSeries()}</p><b>${esc(axe ? axe.nom : q.theme)}</b></div></div>
   ${q.actualite ? `<div class="notice"><b>Dans l'actualité depuis le ${frDate(q.actualite.depuis)}.</b> ${esc(q.actualite.evenement)} <a href="${esc(q.actualite.source.url)}" target="_blank" rel="noopener noreferrer">${esc(q.actualite.source.titre)}</a><br><span class="small muted">Cette question compte dans la proximité avec les candidats, mais ne déplace pas vos pistes. Elle sera retirée quand le sujet ne fera plus l'actualité.</span></div>` : axe ? '' : '<p class="small muted" style="margin:-6px 0 12px">Cette question compte dans la proximité avec les candidats, mais ne déplace pas vos pistes : elle ne se range sur aucun des axes.</p>'}
   <div class="card affirm"><p class="eyebrow">Affirmation</p><p class="statement">« ${esc(q.enonce)} »</p><p class="context">${esc(q.contexte)}</p></div>
@@ -752,7 +752,6 @@ window.addEventListener('hashchange', route);
   D.baseQuestions = D.questions;
   D.questions = orderQuestions(D.baseQuestions);
   document.getElementById('foot-version').textContent = `Version ${D.version.version} · ${frDate(D.version.date)}`;
-  if (CFG.SOURCE_URL) { const n = document.querySelector('.footlinks'); if (n) n.insertAdjacentHTML('beforeend', `<a href="${esc(CFG.SOURCE_URL)}" target="_blank" rel="noopener noreferrer">Code source</a>`); }
   counter('GET');
   ready = true;
   route();

@@ -111,6 +111,17 @@ export function createApp(env = {}, deps = {}) {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: h });
     if (req.method === 'GET' && path === '/health') return new Response('ok', { status: 200 });
 
+    // Compteur global de simulations : GET -> {total}, POST -> +1 puis {total} (format attendu par COUNTER_URL du site).
+    if (path === '/counter' && (req.method === 'GET' || req.method === 'POST')) {
+      if (req.method === 'POST') {
+        if (!originOk(req)) return send({ error: 'origine non autorisée' }, 403, h);
+        if (limited(req, 'counter', 10, 3600e3)) return send({ error: 'trop de requêtes' }, 429, h);
+        up.run('simulations');
+      }
+      const row = db.prepare('SELECT n FROM counters WHERE k = ?').get('simulations');
+      return send({ total: row ? row.n : 0 }, 200, h);
+    }
+
     if (req.method === 'POST' && path === '/hit') {
       if (!originOk(req)) return send({ error: 'origine non autorisée' }, 403, h);
       if (limited(req, 'hit', 60, 60e3)) return send({ error: 'trop de requêtes' }, 429, h);

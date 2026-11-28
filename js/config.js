@@ -3,6 +3,7 @@
 //   GET  -> renvoie {"total": 1234}
 //   POST -> incrémente le total et renvoie le même format
 // Laisser vide pour masquer le compteur. Aucune réponse de l'utilisateur n'est transmise.
+//   Avec le serveur NAS : 'https://api.votre-domaine/counter' (tools/make-clean-copy.sh le renseigne si une API est fournie).
 //
 // CONTACT_URL : adresse du service qui reçoit le formulaire de contact (facultatif).
 //   Avec le serveur NAS : 'https://api.votre-domaine.example/contact'. Le formulaire envoie un POST JSON

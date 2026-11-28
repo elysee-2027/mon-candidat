@@ -35,6 +35,7 @@ if api:
     p = dest / 'js' / 'config.js'; s = p.read_text(encoding='utf-8')
     s = re.sub(r"STATS_URL: '[^']*'", "STATS_URL: '" + api + "'", s)
     s = re.sub(r"CONTACT_URL: '[^']*'", "CONTACT_URL: '" + api + "/contact'", s)
+    s = re.sub(r"COUNTER_URL: '[^']*'", "COUNTER_URL: '" + api + "/counter'", s)
     s = re.sub(r"CONTACT_SERVICE: '[^']*'", "CONTACT_SERVICE: 'relayé par Cloudflare'", s)
     p.write_text(s, encoding='utf-8')
 else:

@@ -1,0 +1,18 @@
+name = "elysee-compteur"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://elysee-2027.github.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "elysee-compteur"
+database_id = "A_REMPLACER"   # fourni par « wrangler d1 create elysee-compteur »
+
+# Limitation de débit native (facultative) : 10 envois par minute et par adresse.
+[[unsafe.bindings]]
+name = "LIMITER"
+type = "ratelimit"
+namespace_id = "1001"
+simple = { limit = 10, period = 60 }

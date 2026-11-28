@@ -1,8 +1,28 @@
 {
- "version": "1.43",
+ "version": "1.47",
  "date": "2026-11-27",
  "statut": "Proposition en attente de validation",
  "historique": [
+  {
+   "version": "1.47",
+   "date": "2026-11-27",
+   "resume": "Compteur global sans domaine : Worker Cloudflare + D1 (tools/cloudflare-counter), testé avec une base simulée."
+  },
+  {
+   "version": "1.46",
+   "date": "2026-11-27",
+   "resume": "Pied de page : lien « Code source » retiré (le lien reste dans les mentions légales)."
+  },
+  {
+   "version": "1.45",
+   "date": "2026-11-27",
+   "resume": "Serveur NAS : point d'accès /counter (compteur global de simulations, 10 envois par heure et par adresse) ; le script de copie propre renseigne COUNTER_URL quand une API est fournie."
+  },
+  {
+   "version": "1.44",
+   "date": "2026-11-27",
+   "resume": "Questionnaire : compteur de réponses (« 62 / 138 réponses ») et barre de progression fondés sur le nombre de réponses données, plus sur le numéro de la question."
+  },
   {
    "version": "1.43",
    "date": "2026-11-27",

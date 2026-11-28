@@ -20,13 +20,23 @@ let r = await call('/hit', { method: 'POST', body: { v: 1, items: [{ q: 'q12', a
 ok(r.status === 204, 'envoi de statistiques valide accepté');
 r = await call('/admin/totals', admin); let j = await r.json();
 ok(j.counters['a:q12:2'] === 1 && j.counters['s:3'] === 1, 'compteurs incrémentés');
-ok(Object.keys(j.counters).every((k) => /^(a:q\d+:(-?\d|na)|s:\d+|d:\d{4}-\d{2}-\d{2})$/.test(k)), 'seules clés possibles : question, réponse, série, jour');
+ok(Object.keys(j.counters).every((k) => /^(a:q\d+:(-?\d|na)|s:\d+|d:\d{4}-\d{2}-\d{2}|simulations)$/.test(k)), 'seules clés possibles : question, réponse, série, jour');
 ok((await call('/hit', { method: 'POST', body: { v: 1, items: [{ q: 'q1', a: '9' }] } })).status === 400, 'réponse hors valeurs refusée');
 ok((await call('/hit', { method: 'POST', body: { v: 1, items: [{ q: 'q1', a: '1' }] }, origin: 'https://autre.example' })).status === 403, 'origine non autorisée refusée');
 ok((await call('/hit', { method: 'POST', raw: 'x'.repeat(9000) })).status === 413, 'corps trop volumineux refusé');
 r = await call('/hit', { method: 'POST', body: { v: 1, items: [{ q: 'q1', a: '1' }], ip: '1.2.3.4', user: 'abc' } });
 j = await (await call('/admin/totals', admin)).json();
 ok(r.status === 204 && !JSON.stringify(j).includes('1.2.3.4') && !JSON.stringify(j).includes('abc'), 'champs inattendus ignorés');
+
+// compteur global de simulations
+r = await call('/counter'); j = await r.json(); ok(r.status === 200 && j.total === 0, 'compteur : GET renvoie le total (0 au départ)');
+r = await call('/counter', { method: 'POST', ip: '203.0.113.40' }); j = await r.json(); ok(r.status === 200 && j.total === 1, 'compteur : POST incrémente et renvoie le total');
+r = await call('/counter', { method: 'POST', ip: '203.0.113.41' }); j = await r.json(); ok(j.total === 2, 'compteur : un second visiteur → 2');
+ok((await call('/counter', { method: 'POST', origin: 'https://autre.example', ip: '203.0.113.42' })).status === 403, 'compteur : origine non autorisée refusée');
+let cl; for (let i = 0; i < 12; i++) cl = await call('/counter', { method: 'POST', ip: '198.51.100.50' });
+ok(cl.status === 429, 'compteur : plus de 10 envois par heure depuis une même adresse → 429');
+j = await (await call('/counter')).json(); ok(j.total === 12, 'compteur : seuls les envois acceptés sont comptés (12)');
+ok(!JSON.stringify(await (await call('/counter')).json()).match(/203\.0\.113|198\.51/), 'compteur : aucune adresse dans la réponse');
 
 // limitation des abus (empreinte en mémoire)
 let last; for (let i = 0; i < 62; i++) last = await call('/hit', { method: 'POST', body: { v: 1, items: [{ q: 'q2', a: '1' }] }, ip: '198.51.100.9' });
